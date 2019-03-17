@@ -6,16 +6,23 @@ package LCQuestions.lc1014CapacityToShipPackagesWithinDDays;
  * 774. Minimize Max Distance to Gas Station
  */
 public class CapacityToShipPackagesWithinDDays {
+    public static void main(String[] args) {
+        CapacityToShipPackagesWithinDDays c = new CapacityToShipPackagesWithinDDays();
+        int[] weights = {1, 2, 3, 1, 1};
+        int days = 4;
+        c.shipWithinDays2(weights, days);
+    }
+
     // Binary Search
     public int shipWithinDays(int[] weights, int D) {
         int left = 0, right = 0;
-        for (int w: weights) {
+        for (int w : weights) {
             left = Math.max(left, w);
             right += w;
         }
         while (left < right) {
             int mid = (left + right) / 2, need = 1, cur = 0;
-            for (int w: weights) {
+            for (int w : weights) {
                 if (cur + w > mid) {
                     need += 1;
                     cur = 0;
@@ -32,7 +39,7 @@ public class CapacityToShipPackagesWithinDDays {
     public int shipWithinDays1(int[] weights, int D) {
         int low = 0;
         int high = 0;
-        for (int w: weights) {
+        for (int w : weights) {
             low = Math.max(low, w);
             high += w;
         }
@@ -48,7 +55,7 @@ public class CapacityToShipPackagesWithinDDays {
     public int shipWithinDays2(int[] weights, int D) {
         int low = 0;
         int high = 0;
-        for (int w: weights) {
+        for (int w : weights) {
             low = Math.max(low, w);
             high += w;
         }
@@ -63,11 +70,12 @@ public class CapacityToShipPackagesWithinDDays {
         }
         return low;
     }
+
     private boolean isValid(int capacity, int[] weights, int D) {
         int cur = 0;
         int dayNeeds = 1;
-        for (int w: weights) {
-            if (cur + w> capacity) {
+        for (int w : weights) {
+            if (cur + w > capacity) {
                 cur = 0;
                 dayNeeds++;
             }
@@ -75,12 +83,5 @@ public class CapacityToShipPackagesWithinDDays {
 
         }
         return dayNeeds <= D;
-    }
-
-    public static void main(String[] args) {
-        CapacityToShipPackagesWithinDDays c = new CapacityToShipPackagesWithinDDays();
-        int[] weights = {1,2,3,1,1};
-        int days = 4;
-        c.shipWithinDays2(weights, days);
     }
 }

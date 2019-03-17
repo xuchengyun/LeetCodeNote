@@ -3,18 +3,10 @@ package LCQuestions.lc252MeetingRooms;
 import java.util.Arrays;
 
 public class MeetingRooms {
-    static class Interval {
-        int start;
-        int end;
-        Interval() {
-            start = 0;
-            end = 0;
-        }
-
-        Interval(int s, int e) {
-            start = s;
-            end = e;
-        }
+    public static void main(String[] args) {
+        MeetingRooms testBruteForce = new MeetingRooms();
+        Interval[] intervals = new Interval[]{new Interval(5, 8), new Interval(6, 8)};
+        testBruteForce.canAttendMeetings1(intervals);
     }
 
     // Sorting
@@ -41,9 +33,19 @@ public class MeetingRooms {
         }
         return true;
     }
-    public static void main(String[] args) {
-        MeetingRooms testBruteForce = new MeetingRooms();
-        Interval[] intervals = new Interval[] {new Interval(5, 8), new Interval(6,8)};
-        testBruteForce.canAttendMeetings1(intervals);
+
+    static class Interval {
+        int start;
+        int end;
+
+        Interval() {
+            start = 0;
+            end = 0;
+        }
+
+        Interval(int s, int e) {
+            start = s;
+            end = e;
+        }
     }
 }

@@ -2,14 +2,6 @@ package LCQuestions.lc021MergetTwoSortedList;
 
 public class MergetTwoSortedList {
 
-    class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            this.val = x;
-        }
-    }
-
     // Iteration
     public ListNode mergeTwoLists1(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
@@ -53,6 +45,15 @@ public class MergetTwoSortedList {
         } else {
             l2.next = mergeTwoList2(l1, l2.next);
             return l2;
+        }
+    }
+
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            this.val = x;
         }
     }
 }

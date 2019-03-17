@@ -1,11 +1,10 @@
 package LCQuestions.lc1013PairsOfSongsWithTotalDurationsDivisibleby60;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
 public class PairsOfSongsWithTotalDurationsDivisibleby60 {
+    public static void main(String[] args) {
+
+    }
+
     // two sum(变种)
     // brute force
     public int numPairsDivisibleBy60(int[] time) {
@@ -25,7 +24,7 @@ public class PairsOfSongsWithTotalDurationsDivisibleby60 {
         if (time == null || time.length == 0) throw new RuntimeException("input is not valid");
         int count[] = new int[60];
         for (int i = 0; i < time.length; i++) {
-            count[time[i] % 60] ++;
+            count[time[i] % 60]++;
         }
 
         int res = 0;
@@ -35,9 +34,5 @@ public class PairsOfSongsWithTotalDurationsDivisibleby60 {
             res += count[i] * count[60 - i];
         }
         return res;
-    }
-
-    public static void main(String[] args) {
-
     }
 }

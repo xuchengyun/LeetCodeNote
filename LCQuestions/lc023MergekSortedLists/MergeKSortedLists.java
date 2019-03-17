@@ -3,14 +3,6 @@ package LCQuestions.lc023MergekSortedLists;
 import java.util.PriorityQueue;
 
 public class MergeKSortedLists {
-    class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     // divide and conquer
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists == null || lists.length == 0) return null;
@@ -86,6 +78,15 @@ public class MergeKSortedLists {
         } else {
             right.next = mergeTwoSortedList1(left, right.next);
             return right;
+        }
+    }
+
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
         }
     }
 }

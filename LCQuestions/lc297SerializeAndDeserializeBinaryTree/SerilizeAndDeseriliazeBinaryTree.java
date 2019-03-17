@@ -4,15 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class SerilizeAndDeseriliazeBinaryTree {
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
     // bfs
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
@@ -52,5 +43,15 @@ public class SerilizeAndDeseriliazeBinaryTree {
             }
         }
         return root;
+    }
+
+    class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
     }
 }

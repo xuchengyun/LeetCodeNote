@@ -4,15 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class InvertBinaryTree {
-  public class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode(int x) {
-          val = x;
-      }
-  }
-  // recursion
+    // recursion
     public TreeNode invertTree1(TreeNode root) {
         if (root == null) return null;
         root.left = invertTree1(root.right);
@@ -34,5 +26,15 @@ public class InvertBinaryTree {
             if (right != null) q.offer(right);
         }
         return root;
+    }
+
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
     }
 }

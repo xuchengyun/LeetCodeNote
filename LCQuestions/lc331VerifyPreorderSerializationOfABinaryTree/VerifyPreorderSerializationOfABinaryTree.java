@@ -35,7 +35,7 @@ public class VerifyPreorderSerializationOfABinaryTree {
         if (preorder == null) return false;
         String[] tree = preorder.split(",");
         int index = isValid(tree, 0);
-        return tree.length - 1== index;
+        return tree.length - 1 == index;
     }
 
     private int isValid(String[] s, int index) {

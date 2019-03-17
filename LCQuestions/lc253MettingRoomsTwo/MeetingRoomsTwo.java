@@ -3,19 +3,6 @@ package LCQuestions.lc253MettingRoomsTwo;
 import java.util.Arrays;
 
 public class MeetingRoomsTwo {
-    static class Interval {
-        int start;
-        int end;
-        Interval() {
-            start = 0;
-            end = 0;
-        }
-
-        Interval(int s, int e) {
-            start = s;
-            end = e;
-        }
-    }
     public int minMeetingRooms(Interval[] intervals) {
         // start array
         int[] starts = new int[intervals.length];
@@ -46,5 +33,20 @@ public class MeetingRoomsTwo {
             }
         }
         return cnt;
+    }
+
+    static class Interval {
+        int start;
+        int end;
+
+        Interval() {
+            start = 0;
+            end = 0;
+        }
+
+        Interval(int s, int e) {
+            start = s;
+            end = e;
+        }
     }
 }

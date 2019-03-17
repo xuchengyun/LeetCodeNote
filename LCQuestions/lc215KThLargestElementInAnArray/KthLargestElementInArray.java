@@ -3,6 +3,12 @@ package LCQuestions.lc215KThLargestElementInAnArray;
 import java.util.PriorityQueue;
 
 public class KthLargestElementInArray {
+    public static void main(String[] args) {
+        KthLargestElementInArray k = new KthLargestElementInArray();
+        int[] arr = new int[]{3, 2, 1, 5, 6, 4};
+        System.out.println(k.findKthLargest1(arr, 2));
+    }
+
     public int findKthLargest(int[] nums, int k) {
         // Priority Queue
         // put comparator into parameters
@@ -53,11 +59,5 @@ public class KthLargestElementInArray {
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
-    }
-
-    public static void main(String[] args) {
-        KthLargestElementInArray k = new KthLargestElementInArray();
-        int[] arr = new int[] {3,2,1,5,6,4};
-        System.out.println(k.findKthLargest1(arr, 2));
     }
 }

@@ -1,8 +1,5 @@
 package LCQuestions.lc089GreyCode;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class GreyCode {
 /*    1.直接排列
     以二进制为0值的格雷码为第零项，

@@ -1,18 +1,9 @@
 package LCQuestions.lc250CountUnivalueSubtrees;
 
 public class CountUnivaluesSubtrees {
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
     // this method is not efficient, post order traverse will be more efficient
     int res = 0;
+
     public int countUnivalSubtrees(TreeNode root) {
         if (root == null) return res;
         if (isUnival(root, root.val)) res++;
@@ -44,5 +35,15 @@ public class CountUnivaluesSubtrees {
             return true;
         }
         return false;
+    }
+
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
     }
 }

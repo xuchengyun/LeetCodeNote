@@ -1,7 +1,7 @@
 package LCQuestions.lc033SearchInRotatedSortedArray;
 
 public class SearchInRotatedSortedArray {
-//    0　　1　　2　　 4　　5　　6　 7
+    //    0　　1　　2　　 4　　5　　6　 7
 //
 //    7　　0　　1　　 2　　4　　5　 6
 //

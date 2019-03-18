@@ -80,7 +80,6 @@ public class CapacityToShipPackagesWithinDDays {
                 dayNeeds++;
             }
             cur += w;
-
         }
         return dayNeeds <= D;
     }

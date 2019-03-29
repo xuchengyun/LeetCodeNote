@@ -2,33 +2,60 @@ package LCQuestions.lc1015NumbersWithRepeatedDigits;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class NumbersWithRepeatedDIgits {
     public int numDupDigitsAtMostN(int N) {
-        // Transform N + 1 to arrayList
-        ArrayList<Integer> L = new ArrayList<Integer>();
-        for (int x = N + 1; x > 0; x /= 10)
-            L.add(0, x % 10);
-
-        // Count the number with digits < N
-        int res = 0, n = L.size();
-        for (int i = 1; i < n; ++i)
-            res += 9 * A(9, i - 1);
-
-        // Count the number with same prefix
-        HashSet<Integer> seen = new HashSet<>();
-        for (int i = 0; i < n; ++i) {
-            for (int j = i > 0 ? 0 : 1; j < L.get(i); ++j)
-                if (!seen.contains(j))
-                    res += A(9 - i, n - i - 1);
-            if (seen.contains(L.get(i))) break;
-            seen.add(L.get(i));
+        List<Integer> digits = new ArrayList<>();
+        for (int tmp = N + 1; tmp > 0; tmp /= 10) {
+            digits.add(0, tmp % 10);
         }
-        return N - res;
+
+        int len = digits.size();
+
+        int noRepeatNum = 0;
+        for (int i = 0; i < len - 1; i++) {
+            noRepeatNum += calNoRepeatWithinDigitNum(i);
+        }
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < len; i++) {
+            int start = 1;
+            if (i != 0) {
+                start = 0;
+            }
+            for (int j = start; j < digits.get(i); j++) {
+                if (!set.contains(j)) {
+                    noRepeatNum += calNoRepeatWithinDigitNum(9 - i, len - i - 1);
+                }
+            }
+            if (set.contains(digits.get(i))) break;
+
+            set.add(digits.get(i));
+        }
+        return N - noRepeatNum;
     }
 
-
-    public int A(int m, int n) {
-        return n == 0 ? 1 : A(m, n - 1) * (m - n + 1);
+    private int calNoRepeatWithinDigitNum(int num) {
+        int res = 9;
+        for (int i = 0; i < num; i++) {
+            res *= (9 - i);
+        }
+        return res;
     }
+
+    private int calNoRepeatWithinDigitNum(int largestNum, int num) {
+        if (num == 0) return 1;
+        int res = largestNum;
+        for (int i = 1; i < num; i++) {
+            res *= (largestNum - i);
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        NumbersWithRepeatedDIgits n = new NumbersWithRepeatedDIgits();
+        System.out.println(n.numDupDigitsAtMostN(7654));
+    }
+
 }

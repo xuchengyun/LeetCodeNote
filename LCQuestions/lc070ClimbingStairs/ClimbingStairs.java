@@ -12,6 +12,19 @@ public class ClimbingStairs {
         return dp[n];
     }
 
+    // dp save space
+    public int climbStairs3(int n) {
+        int[] dp = new int[n + 1];
+        int first = 1;
+        int second = 1;
+        for (int i = 2; i <= n; i++) {
+            int sum = first + second;
+            first = second;
+            second = sum;
+        }
+        return second;
+    }
+
     // recursion
     public int climbStairs1(int n) {
         if (n < 2) return 1;

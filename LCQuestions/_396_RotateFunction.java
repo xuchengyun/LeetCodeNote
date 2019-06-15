@@ -1,4 +1,4 @@
-package LCQuestions.lc396RotateFunction;
+package LCQuestions;
 
 public class _396_RotateFunction {
 

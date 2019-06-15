@@ -1,4 +1,4 @@
-package LCQuestions.lc390EliminationGame;
+package LCQuestions;
 
 public class _390_EliminationGame {
     /**

@@ -1,8 +1,8 @@
-package LCQuestions.lc126WordLadderII;
+package LCQuestions;
 
 import java.util.*;
 
-public class WordLadderII {
+public class _126_WordLadderII {
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
         Set<String> dict = new HashSet<>(wordList);
         List<List<String>> res = new ArrayList<>();
@@ -68,7 +68,7 @@ public class WordLadderII {
     }
 
     public static void main(String[] args) {
-        WordLadderII w = new WordLadderII();
+        _126_WordLadderII w = new _126_WordLadderII();
         String start = "a";
         String end = "c";
         String[] sArray = new String[]{"a", "b", "c"};

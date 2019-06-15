@@ -1,4 +1,4 @@
-package LCQuestions.lc381InsertDeleteGetRandomO1Duplicate;
+package LCQuestions;
 
 import java.util.ArrayList;
 import java.util.HashMap;

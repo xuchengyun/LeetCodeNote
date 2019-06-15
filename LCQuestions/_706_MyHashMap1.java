@@ -1,4 +1,4 @@
-package LCQuestions.lc706DesignHashMap;
+package LCQuestions;
 
 public class MyHashMap1 {
 

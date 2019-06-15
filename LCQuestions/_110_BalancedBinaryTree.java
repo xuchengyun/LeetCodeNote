@@ -1,6 +1,6 @@
-package LCQuestions.lc110BalancedBinaryTree;
+package LCQuestions;
 
-public class BalancedBinaryTree {
+public class _110_BalancedBinaryTree {
     public class TreeNode {
         int val;
         TreeNode left;

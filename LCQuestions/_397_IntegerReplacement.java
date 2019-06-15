@@ -1,4 +1,4 @@
-package LCQuestions.lc397IntegerReplacement;
+package LCQuestions;
 
 public class _397_IntegerReplacement {
     // 位运算

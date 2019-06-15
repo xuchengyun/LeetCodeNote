@@ -1,4 +1,4 @@
-package LCQuestions.lc386LexicographicalNumbers;
+package LCQuestions;
 
 import java.util.ArrayList;
 import java.util.List;

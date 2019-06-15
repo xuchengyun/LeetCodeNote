@@ -1,4 +1,4 @@
-package LCQuestions.lc706DesignHashMap;
+package LCQuestions;
 
 import java.util.Arrays;
 

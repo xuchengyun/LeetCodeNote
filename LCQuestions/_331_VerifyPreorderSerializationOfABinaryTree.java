@@ -1,4 +1,4 @@
-package LCQuestions.lc331VerifyPreorderSerializationOfABinaryTree;
+package LCQuestions;
 
 import java.util.Stack;
 

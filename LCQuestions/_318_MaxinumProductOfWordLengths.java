@@ -1,4 +1,4 @@
-package LCQuestions.lc318MaximumProductOfWordLenghs;
+package LCQuestions;
 
 public class _318_MaxinumProductOfWordLengths {
 

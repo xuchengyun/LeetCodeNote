@@ -1,9 +1,9 @@
-package LCQuestions.lc089GreyCode;
+package LCQuestions;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class GreyCode {
+public class _089_GreyCode {
 
     public List<Integer> grayCode(int n) {
         List<Integer> res = new ArrayList<>();

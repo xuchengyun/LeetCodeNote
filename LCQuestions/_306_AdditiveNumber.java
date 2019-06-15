@@ -1,4 +1,4 @@
-package LCQuestions.lc306AdditiveNumber;
+package LCQuestions;
 
 public class _306_AdditiveNumber {
     /**

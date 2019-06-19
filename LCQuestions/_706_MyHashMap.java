@@ -5,11 +5,11 @@ import java.util.Arrays;
 /**
  * Naive way
  */
-public class MyHashMap {
+public class _706_MyHashMap {
 
     private int[] arr;
     /** Initialize your data structure here. */
-    public MyHashMap() {
+    public _706_MyHashMap() {
         arr = new int[1000000];
         Arrays.fill(arr, -1);
     }

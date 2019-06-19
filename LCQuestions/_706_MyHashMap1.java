@@ -1,6 +1,6 @@
 package LCQuestions;
 
-public class MyHashMap1 {
+public class _706_MyHashMap1 {
 
     ListNode[] nodes = new ListNode[10000];
 

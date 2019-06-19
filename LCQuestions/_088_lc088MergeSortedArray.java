@@ -1,6 +1,6 @@
 package LCQuestions;
 
-public class lc088MergeSortedArray {
+public class _088_lc088MergeSortedArray {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int l1 = m - 1;
         int l2 = n - 1;

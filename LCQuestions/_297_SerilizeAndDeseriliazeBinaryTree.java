@@ -7,12 +7,13 @@ public class _297_SerilizeAndDeseriliazeBinaryTree {
     // bfs
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
+        if (root == null) return "";
         Queue<TreeNode> q = new LinkedList<>();
         q.offer(root);
         while (!q.isEmpty()) {
             TreeNode cur = q.poll();
             if (cur == null) {
-                sb.append("null");
+                sb.append("null,");
                 continue;
             }
             int val = cur.val;

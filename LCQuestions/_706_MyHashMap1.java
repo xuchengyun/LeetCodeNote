@@ -1,18 +1,16 @@
 package LCQuestions;
 
-public class MyHashMap1 {
+public class _706_MyHashMap1 {
 
     ListNode[] nodes = new ListNode[10000];
 
-    public int get(int key)
-    {
+    public int get(int key) {
         int index = getIndex(key);
         ListNode prev = findElement(index, key);
         return prev.next == null ? -1 : prev.next.val;
     }
 
-    public void put(int key, int value)
-    {
+    public void put(int key, int value) {
         int index = getIndex(key);
         ListNode prev = findElement(index, key);
 
@@ -22,8 +20,7 @@ public class MyHashMap1 {
             prev.next.val = value;
     }
 
-    public void remove(int key)
-    {
+    public void remove(int key) {
         int index = getIndex(key);
         ListNode prev = findElement(index, key);
 
@@ -36,8 +33,7 @@ public class MyHashMap1 {
         return Integer.hashCode(key) % nodes.length;
     }
 
-    private ListNode findElement(int index, int key)
-    {
+    private ListNode findElement(int index, int key) {
         if(nodes[index] == null)
             return nodes[index] = new ListNode(-1, -1);
 
@@ -50,8 +46,7 @@ public class MyHashMap1 {
         return prev;
     }
 
-    private static class ListNode
-    {
+    private static class ListNode {
         int key, val;
         ListNode next;
 

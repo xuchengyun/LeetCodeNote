@@ -12,7 +12,7 @@ public class _204_CountPrimes {
                     notPrime[i * j] = true;
                 }
             }
-        }
+        } 
         return count;
     }
 }

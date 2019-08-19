@@ -21,6 +21,15 @@ public class _330_PatchingArray {
      */
     //greedy
     // 此题本质上是一个数学题
+    //nums = [1, 2, 4, 13, 43] and n = 100
+    /**
+     1 : miss : 2
+     2 : miss : 4
+     4 : miss : 8
+     13 : miss 16 , added : 1
+     13 : miss 29, added : 1
+     43 : miss 58 , added : 1
+     */
     public int minPatches(int[] nums, int n) {
         int miss = 1, added = 0, i = 0;
         while (miss <= n) {

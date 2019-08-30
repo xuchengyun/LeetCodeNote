@@ -25,7 +25,6 @@ public class _010_RegularExpressionMatching {
      "ab", ".*"
      "aab", "c*a*b"
 
-
      boolean dp[i][j]的含义是s[0-i] 与 p[0-j]是否匹配。
 
      c* = empty
@@ -42,7 +41,7 @@ public class _010_RegularExpressionMatching {
 
      "aab", "c*aab"
 
-     i = 1 dp[0][2] = true
+     i = 1  dp[0][2] = true
 
      time : O(m * n)
      space : O(m * n)

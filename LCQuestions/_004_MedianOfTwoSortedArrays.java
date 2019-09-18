@@ -45,13 +45,18 @@ public class _004_MedianOfTwoSortedArrays {
      *
      * index: 0 1   2 3 4 5
      *          L1  R1
-     * num1:  3 5 | 8 9             4 cut1
-     * num2:  1 2 7 |10 11 12       6 cut2
+     * num1:  3 5 | 8 9             4 cut1: 左边有几个元素
+     * num2:  1 2 7 |10 11 12       6 cut2: 左边有几个元素
      *            L2 R2
      * num3:  1 2 3 5 7 | 8 9 10 11 12
      *
      * num3 -> num1 + num2 -> num1
      *
+     * L1 <= R2
+     * L2 <= R1
+     *
+     * L1 > R2 cut1 << (cutL, cur1 - 1)
+     * L2 > R1 cur2 >> (cut1 + 1, cutR)
      *
      */
     public double findMedianSortedArrays1(int[] nums1, int[] nums2) {

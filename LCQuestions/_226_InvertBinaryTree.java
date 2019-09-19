@@ -7,8 +7,9 @@ public class _226_InvertBinaryTree {
     // recursion
     public TreeNode invertTree1(TreeNode root) {
         if (root == null) return null;
+        TreeNode temp = root.left;
         root.left = invertTree1(root.right);
-        root.right = invertTree1(root.left);
+        root.right = invertTree1(temp);
         return root;
     }
 

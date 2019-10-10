@@ -1,5 +1,10 @@
 package LCQuestions;
 
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
 public class _1187_MakeArrayStrictlyIncreasing {
     /**
      * Given two integer arrays arr1 and arr2, return the minimum number of operations (possibly zero) needed to make arr1 strictly increasing.
@@ -28,5 +33,7 @@ public class _1187_MakeArrayStrictlyIncreasing {
     //TODO
     public int makeArrayIncreasing(int[] arr1, int[] arr2) {
         return 0;
+
+
     }
 }

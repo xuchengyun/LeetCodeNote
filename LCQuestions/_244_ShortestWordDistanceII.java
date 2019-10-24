@@ -1,9 +1,6 @@
 package LCQuestions;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class _244_ShortestWordDistanceII {
     Map<String, List<Integer>> map;
@@ -35,4 +32,20 @@ public class _244_ShortestWordDistanceII {
         }
         return res;
     }
+    public int shortest1(String word1, String word2) {
+        int i = 0, j = 0;
+        List<Integer> list1 = map.get(word1);
+        List<Integer> list2 = map.get(word2);
+        int res = Integer.MAX_VALUE;
+        while (i < list1.size() && j < list2.size()) {
+            res = Math.min(res, list1.get(i) - list2.get(j));
+            if (list1.get(i) < list2.get(j)) {
+                i++;
+            } else {
+                j++;
+            }
+        }
+        return res;
+    }
+
 }

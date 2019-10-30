@@ -1,5 +1,7 @@
 package LCQuestions;
 
+import java.util.Random;
+
 public class _021_MergetTwoSortedList {
 
     // Iteration
@@ -8,30 +10,15 @@ public class _021_MergetTwoSortedList {
         ListNode cur = dummy;
         while (l1 != null && l2 != null) {
             if (l1.val <= l2.val) {
-                cur.next = new ListNode(l1.val);
+                cur.next = l1;
                 l1 = l1.next;
             } else {
-                cur.next = new ListNode(l2.val);
+                cur.next = l2;
                 l2 = l2.next;
             }
             cur = cur.next;
         }
-        if (l2 != null) {
-            while (l2 != null) {
-                cur.next = new ListNode(l2.val);
-                l2 = l2.next;
-                cur = cur.next;
-            }
-        }
-
-        if (l1 != null) {
-            while (l1 != null) {
-                cur.next = new ListNode(l1.val);
-                l1 = l1.next;
-                cur = cur.next;
-            }
-        }
-
+        cur.next = l1 == null ? l2 : l1;
         return dummy.next;
     }
 
@@ -55,5 +42,10 @@ public class _021_MergetTwoSortedList {
         ListNode(int x) {
             this.val = x;
         }
+    }
+
+    public static void main(String[] args) {
+        Random r = new Random();
+        System.out.println(r.nextInt());
     }
 }

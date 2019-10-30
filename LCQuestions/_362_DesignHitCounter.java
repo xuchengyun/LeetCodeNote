@@ -55,5 +55,4 @@ public class _362_DesignHitCounter {
         return res;
     }
 
-
 }

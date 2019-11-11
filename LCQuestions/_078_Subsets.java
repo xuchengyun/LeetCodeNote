@@ -1,6 +1,8 @@
 package LCQuestions;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class _078_Subsets {
@@ -50,6 +52,23 @@ public class _078_Subsets {
             }
         }
         return res;
+    }
+
+    public List<List<Integer>> subsets3(int[] nums) {
+//        Arrays.sort(nums);
+        int n = nums.length;
+        List<List<Integer>> subsets = new ArrayList<>();
+        for (int i = 0; i < (1 << n); i++) {
+            List<Integer> subset = new ArrayList<>();
+            for (int j = 0; j < nums.length; j++) {
+                if ((i & (1 << j)) != 0) {
+                    subset.add(nums[j]);
+                }
+            }
+//            Collections.sort(subset);
+            subsets.add(subset);
+        }
+        return subsets;
     }
 
 }

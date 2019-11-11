@@ -31,4 +31,37 @@ public class _692_TopKFrequentWords {
         }
         return res;
     }
+
+    public List<String> topKFrequent1(String[] words, int k) {
+        Map<String, Integer> count = new HashMap<>();
+        for (String word: words) {
+            count.put(word, count.getOrDefault(word, 0) + 1);
+        }
+
+        List<String>[] bucket = new List[words.length + 1];
+        for (Map.Entry<String, Integer> entry : count.entrySet()) {
+            String s = entry.getKey();
+            int freq = entry.getValue();
+            if (bucket[freq] == null) {
+                bucket[freq] = new ArrayList<>();
+            }
+            bucket[freq].add(s);
+        }
+
+        List<String> res = new ArrayList<>();
+        for (int i = bucket.length - 1; i >= 0; i--) {
+            if (bucket[i] == null) {
+                continue;
+            }
+            Collections.sort(bucket[i]);
+            List<String> tmp = bucket[i].subList(0, Math.min(bucket[i].size(), k));
+            res.addAll(tmp);
+            k -= tmp.size();
+            if (k <= 0) {
+                break;
+            }
+        }
+        return res;
+    }
+
 }

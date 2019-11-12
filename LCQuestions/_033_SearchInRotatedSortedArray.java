@@ -25,7 +25,6 @@ public class _033_SearchInRotatedSortedArray {
             if (nums[mid] == target) {
                 return mid;
             }
-
             if (nums[mid] < nums[right]) {
                 if (nums[mid] < target && nums[right] >= target) {
                     left = mid + 1;

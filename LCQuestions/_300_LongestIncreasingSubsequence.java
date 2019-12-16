@@ -1,6 +1,8 @@
 package LCQuestions;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class _300_LongestIncreasingSubsequence {
 
@@ -12,18 +14,38 @@ public class _300_LongestIncreasingSubsequence {
         return lengthOfLIS(nums, Integer.MIN_VALUE, 0);
     }
 
-    private int lengthOfLIS(int[] nums, int pre, int curpos) {
-        if (nums.length == curpos) return 0;
-
-        int taken = 0;
-        int notTaken = 0;
-        if (nums[curpos] > pre) {
-            taken = 1 + lengthOfLIS(nums, nums[curpos], curpos + 1);
-            notTaken = lengthOfLIS(nums, pre, curpos + 1);
-        } else {
-            notTaken = lengthOfLIS(nums, pre, curpos + 1);
+    /**
+     * method3
+     * patient sort + binary search(插入排序 二分法)
+     */
+    public static int lengthOfLIS4(int[] nums) {
+        // use a list to store the tail for each pile
+        List<Integer> pileTail = new ArrayList<>();
+        for (int num : nums) {
+            // use binary search to find the smallest next tail which is larger that the number
+            int left = 0, right = pileTail.size() - 1;
+            while (left <= right) {
+                int mid = left + (right - left) / 2;
+                if (pileTail.get(mid) >= num) {
+                    right = mid;
+                    if (left == right) {
+                        break;
+                    }
+                } else {
+                    left = mid + 1;
+                }
+            }
+            // the left is not contained in current pile
+            // we create a new pile
+            if (left == pileTail.size()) {
+                pileTail.add(num);
+            } else {
+                // we update the tail of current pile
+                pileTail.set(left, num);
+            }
         }
-        return Math.max(taken, notTaken);
+        // the size of current pile is the answer
+        return pileTail.size();
     }
 
     /**
@@ -79,5 +101,24 @@ public class _300_LongestIncreasingSubsequence {
             maxans = Math.max(maxans, dp[i]);
         }
         return maxans;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = new int[]{10, 9, 2, 5, 3, 7, 101, 18};
+        lengthOfLIS4(nums);
+    }
+
+    private int lengthOfLIS(int[] nums, int pre, int curpos) {
+        if (nums.length == curpos) return 0;
+        int taken = 0;
+        int notTaken = 0;
+        if (nums[curpos] > pre) {
+            taken = 1 + lengthOfLIS(nums, nums[curpos], curpos + 1);
+            notTaken = lengthOfLIS(nums, pre, curpos + 1);
+        } else {
+            // because the value of preMax is already put into answer, So we cannot take current element
+            notTaken = lengthOfLIS(nums, pre, curpos + 1);
+        }
+        return Math.max(taken, notTaken);
     }
 }

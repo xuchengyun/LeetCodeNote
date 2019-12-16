@@ -38,4 +38,35 @@ public class _078_Subsets {
         }
     }
 
+    public List<List<Integer>> subsets1(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        res.add(new ArrayList<>());
+        for (int i = 0; i < nums.length; i++) {
+            int size = res.size();
+            for (int j = 0; j < size; j++) {
+                List<Integer> tmp = new ArrayList<>(res.get(j));
+                tmp.add(nums[i]);
+                res.add(tmp);
+            }
+        }
+        return res;
+    }
+
+    public List<List<Integer>> subsets3(int[] nums) {
+//        Arrays.sort(nums);
+        int n = nums.length;
+        List<List<Integer>> subsets = new ArrayList<>();
+        for (int i = 0; i < (1 << n); i++) {
+            List<Integer> subset = new ArrayList<>();
+            for (int j = 0; j < nums.length; j++) {
+                if ((i & (1 << j)) != 0) {
+                    subset.add(nums[j]);
+                }
+            }
+//            Collections.sort(subset);
+            subsets.add(subset);
+        }
+        return subsets;
+    }
+
 }

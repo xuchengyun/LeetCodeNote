@@ -4,51 +4,72 @@ import java.util.*;
 
 public class _380_InsertDeleteGetRandomO1 {
 
+    /**
+     * Design a data structure that supports all following operations in average O(1) time.
+     * insert(val): Inserts an item val to the set if not already present.
+     * remove(val): Removes an item val from the set if present.
+     * getRandom: Returns a random element from current set of elements. Each element must have the same probability of being returned.
+     * Example:
+     * // Init an empty set.
+     * RandomizedSet randomSet = new RandomizedSet();
+     * // Inserts 1 to the set. Returns true as 1 was inserted successfully.
+     * randomSet.insert(1);
+     * // Returns false as 2 does not exist in the set.
+     * randomSet.remove(2);
+     * // Inserts 2 to the set, returns true. Set now contains [1,2].
+     * randomSet.insert(2);
+     * // getRandom should return either 1 or 2 randomly.
+     * randomSet.getRandom();
+     * // Removes 1 from the set, returns true. Set now contains [2].
+     * randomSet.remove(1);
+     * // 2 was already in the set, so return false.
+     * randomSet.insert(2);
+     * // Since 2 is the only number in the set, getRandom always return 2.
+     * randomSet.getRandom();
+     */
+
     // Use arrayList and hashMap to solve this problem
     List<Integer> list;
     Map<Integer, Integer> map;
-    Random rand;
+    Random rd;
 
     /**
      * Initialize your data structure here.
      */
     public _380_InsertDeleteGetRandomO1() {
         list = new ArrayList<>();
-        map = new HashMap<>();
-        rand = new Random();
+        map = new HashMap<Integer, Integer>();
+        rd = new Random();
     }
 
     /**
      * Inserts a value to the set. Returns true if the set did not already contain the specified element.
      */
     public boolean insert(int val) {
-        if (map.containsKey(val)) return false;
-        int len = list.size();
+        if (map.containsKey(val)) {
+            return false;
+        }
+        map.put(val, list.size());
         list.add(val);
-        map.put(val, len);
         return true;
     }
 
-    /**
-     * Removes a value from the set. Returns true if the set contained the specified element.
-     */
+    /** Removes a value from the set. Returns true if the set contained the specified element. */
     public boolean remove(int val) {
-        if (!map.containsKey(val)) return false;
-        int index = map.get(val);
-        map.remove(val);
-        int last = list.get(list.size() - 1);
-        list.remove(list.size() - 1);
-        map.put(last, index);
-        list.set(index, last);
+        if (!map.containsKey(val)) {
+            return false;
+        }
+        int index = map.remove(val);
+        int last = list.remove(list.size() - 1);
+        if (index != list.size()) {
+            map.put(last, index);
+            list.set(index, last);
+        }
         return true;
     }
 
-    /**
-     * Get a random element from the set.
-     */
+    /** Get a random element from the set. */
     public int getRandom() {
-        int len = list.size();
-        int index = rand.nextInt(len);
-        return list.get(index);
+        return list.get(rd.nextInt(list.size()));
     }
 }

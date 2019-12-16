@@ -28,13 +28,14 @@ public class _288_UniqueWordAbbrevaiation {
     }
 
     public boolean isUnique(String word) {
-
+        return true;
     }
 
     private String getAbbe(String s) {
         if (s.length() < 2) {
             return s;
         }
+        return s;
 
     }
 }

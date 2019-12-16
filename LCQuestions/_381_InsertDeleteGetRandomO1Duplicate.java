@@ -14,8 +14,8 @@ public class _381_InsertDeleteGetRandomO1Duplicate {
      * Initialize your data structure here.
      */
     public _381_InsertDeleteGetRandomO1Duplicate() {
-        nums = new ArrayList<Integer>();
-        locs = new HashMap<Integer, Set<Integer>>();
+        nums = new ArrayList<>();
+        locs = new HashMap<>();
     }
 
     /**

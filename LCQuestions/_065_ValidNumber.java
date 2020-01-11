@@ -33,7 +33,7 @@ public class _065_ValidNumber {
      * @return
      */
     public boolean isNumber(String s) {
-        s.trim();
+        s = s.trim();
         boolean numberSeen = false;
         boolean pointSeen = false;
         boolean eSeen = false;

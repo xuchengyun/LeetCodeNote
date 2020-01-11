@@ -1,5 +1,9 @@
 package LCQuestions;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
+
 public class _110_BalancedBinaryTree {
     public class TreeNode {
         int val;
@@ -15,7 +19,6 @@ public class _110_BalancedBinaryTree {
     // time: n * lg(n)
     public boolean isBalanced(TreeNode root) {
         if (root == null) return true;
-
         int left = getDepth(root.left);
         int right = getDepth(root.right);
 
@@ -26,6 +29,38 @@ public class _110_BalancedBinaryTree {
         if (root == null) return true;
         return !(checkDepth(root) == -1);
     }
+
+    //iteration
+    public boolean isBalanced2(TreeNode root) {
+        if (root == null) return true;
+        Stack<TreeNode> s = new Stack<>();
+        TreeNode cur = root;
+        TreeNode pre = null;
+        Map<TreeNode, Integer> map = new HashMap<>();
+        while (!s.isEmpty() || cur != null) {
+            if (cur != null) {
+                s.push(cur);
+                cur = cur.left;
+            } else {
+                cur = s.peek();
+                if (cur.right != null && cur.right != pre) {
+                    cur = cur.right;
+                } else {
+                    int left = cur.left != null ? map.get(cur.left) : 0;
+                    int right = cur.right != null ? map.get(cur.right) : 0;
+                    if (Math.abs(left - right) > 1) {
+                        return false;
+                    }
+                    map.put(cur, Math.max(left, right) + 1);
+                    s.pop();
+                    pre = cur;
+                }
+            }
+
+        }
+        return true;
+    }
+
 
     private int checkDepth(TreeNode root) {
         if (root == null) return 0;

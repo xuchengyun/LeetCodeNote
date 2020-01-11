@@ -45,4 +45,33 @@ public class _144_BinaryTreePreorderTraversal {
         }
         return res;
     }
+
+    // morris traversal
+    public List<Integer> preorderTraversal2(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        if (root == null) {
+            return res;
+        }
+        TreeNode cur = root;
+        while (cur != null) {
+            if (cur.left == null) {
+                res.add(cur.val);
+                cur = cur.right;
+            } else {
+                TreeNode pre = cur.left;
+                while (pre.right != null && pre.right != cur) {
+                    pre = pre.right;
+                }
+                if (pre.right == null) {
+                    res.add(cur.val);
+                    pre.right = cur;
+                    cur = cur.left;
+                } else {
+                    cur = cur.right;
+                    pre.right = null;
+                }
+            }
+        }
+        return res;
+    }
 }

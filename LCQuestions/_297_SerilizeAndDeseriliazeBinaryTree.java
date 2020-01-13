@@ -1,5 +1,6 @@
 package LCQuestions;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -45,6 +46,40 @@ public class _297_SerilizeAndDeseriliazeBinaryTree {
         }
         return root;
     }
+
+    public String serialize1(TreeNode root) {
+        StringBuilder sb = new StringBuilder();
+        dfs(root, sb);
+        return sb.toString();
+    }
+
+    private void dfs(TreeNode root, StringBuilder sb) {
+        if (root == null) {
+            sb.append("null,");
+        } else {
+            sb.append(root.val + ",");
+            dfs(root.left, sb);
+            dfs(root.right, sb);
+        }
+    }
+
+    public TreeNode deserialize1(String data) {
+        Queue<String> q = new LinkedList<>();
+        q.addAll(Arrays.asList(data.split(",")));
+        return dfs1(q);
+    }
+
+    private TreeNode dfs1(Queue<String> q) {
+        String cur = q.poll();
+        if (cur.equals("null")) {
+            return null;
+        }
+        TreeNode node = new TreeNode(Integer.parseInt(cur));
+        node.left = dfs1(q);
+        node.right = dfs1(q);
+        return node;
+    }
+
 
     class TreeNode {
         int val;

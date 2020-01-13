@@ -27,7 +27,7 @@ public class _042_TrappingRainWater {
     /**
     solution2: dynamic programming
     the idea is same as brute force, but only the array two times
-    1. create an array called dp, traver the array height and store the current max in the dp(find the left max)
+     1. create an array called dp, traverse the array height and store the current max in the dp(find the left max)
     2. reverse traverse the dp array and find the left max
     3. find the minumim of left and right max and compare to height[i]
     */

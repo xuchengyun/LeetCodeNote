@@ -1,5 +1,7 @@
 package LCQuestions;
-
+/*
+https://leetcode.com/problems/self-crossing/discuss/1503602/Alternative-one-pass-solution-%2B-proofs.
+*/
 public class _335_SelfCrossing {
     public boolean isSelfCrossing(int[] x) {
         for (int i = 3; i < x.length; ++i) {

@@ -1,4 +1,4 @@
-package LCQuestions;
+package LCQuestions.Solutions._0300_LongestIncreasingSubsequence;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -64,7 +64,7 @@ public class _300_LongestIncreasingSubsequence {
         if (curpos == nums.length) {
             return 0;
         }
-        if (memo[preIndex + 1][curpos] >= 0){
+        if (memo[preIndex + 1][curpos] >= 0) {
             return memo[preIndex + 1][curpos];
         }
         int taken = 0;

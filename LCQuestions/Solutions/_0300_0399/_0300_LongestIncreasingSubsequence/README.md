@@ -1,8 +1,6 @@
 # [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 
-[English Version](/solution/0000-0099/0034.Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array/README_EN.md)
-
-## 题目描述
+## Description
 
 <div><p>Given an integer array <code>nums</code>, return the length of the longest strictly increasing subsequence.</p>
 

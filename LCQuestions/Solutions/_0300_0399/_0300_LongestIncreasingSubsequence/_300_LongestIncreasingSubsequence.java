@@ -1,4 +1,4 @@
-package LCQuestions.Solutions._0300_LongestIncreasingSubsequence;
+package LCQuestions.Solutions._0300_0399._0300_LongestIncreasingSubsequence;
 
 import java.util.ArrayList;
 import java.util.Arrays;

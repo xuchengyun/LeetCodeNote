@@ -2,6 +2,7 @@ import collections
 import json
 import os
 import re
+import configparser
 from urllib.parse import quote, unquote
 from os.path import exists
 
@@ -139,11 +140,19 @@ def __update(cur, new):
 
     return grouped_list
 
+def update_root_readme():
+    with open('../../../LCQuestions/Solutions/README.md', 'r', encoding='utf-8') as f:
+        readme = f.read()
+
+    with open('../../../README.md', 'w+', encoding='utf-8') as f:
+        f.write(readme)
+
 
 if __name__ == '__main__':
-    cookie = \
-    'gr_user_id=c141d545-d594-451d-a1f9-4ba6b7085924; 87b5a3c3f1a55520_gr_last_sent_cs1=ZaZahui528; _gcl_au=1.1.815796698.1655968513; intercom-id-pq9rak4o=956eef5d-bb11-429b-a00f-9a3de491303d; _ga=GA1.2.1185842239.1655966572; _ga_DKXQ03QCVK=GS1.1.1655968513.1.0.1655968783.60; __stripe_mid=3046755c-8059-4336-8af1-ccb0b273264ff504e2; _gid=GA1.2.535106172.1661601492; NEW_PROBLEMLIST_PAGE=1; __atuvc=0%7C30%2C5%7C31%2C12%7C32%2C4%7C33%2C5%7C34; csrftoken=iM3WiLEv3gnAFX3kqLEt8Y9SRte5Zia3SKz2HCidypRm4cUiAwomBa89J72MjRTi; messages="d78c8971dab6281c5c772a5c27e175199478f805$[[\"__json_message\"\0540\05425\054\"You have signed out.\"]\054[\"__json_message\"\0540\05425\054\"Successfully signed in as ZaZahui528.\"]\054[\"__json_message\"\0540\05425\054\"You have signed out.\"]\054[\"__json_message\"\0540\05425\054\"Successfully signed in as ZaZahui528.\"]\054[\"__json_message\"\0540\05425\054\"You have signed out.\"]\054[\"__json_message\"\0540\05425\054\"Successfully signed in as ZaZahui528.\"]]"; LEETCODE_SESSION=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfYXV0aF91c2VyX2lkIjoiNDg5MzEwIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiY2JkNTg3YWFhMDE0NGViODJkNTUyMzhhNDc2MDU1ZjA2MDdiNmZmMyIsImlkIjo0ODkzMTAsImVtYWlsIjoiNDU0MTY2NDQ4QHFxLmNvbSIsInVzZXJuYW1lIjoiWmFaYWh1aTUyOCIsInVzZXJfc2x1ZyI6IlphWmFodWk1MjgiLCJhdmF0YXIiOiJodHRwczovL2Fzc2V0cy5sZWV0Y29kZS5jb20vdXNlcnMveHVjaGVuZ3l1bi9hdmF0YXJfMTU3MjQxMzAwOS5wbmciLCJyZWZyZXNoZWRfYXQiOjE2NjE3MjM0MzEsImlwIjoiNzYuMTIxLjMuODYiLCJpZGVudGl0eSI6Ijk3ZjgwNzQ2OWJjMWUwMzkwZjRiNGE3OTNiMTRkMmViIiwic2Vzc2lvbl9pZCI6MjY4MDc2MjQsIl9zZXNzaW9uX2V4cGlyeSI6MTIwOTYwMH0.ILb_ui7MeX-zCNg99Yzrn7AnsxHJEDxxVPKepfP_IIM; 87b5a3c3f1a55520_gr_session_id=4134921f-0c19-4305-b90c-6afc71edaebf; 87b5a3c3f1a55520_gr_last_sent_sid_with_cs1=4134921f-0c19-4305-b90c-6afc71edaebf; 87b5a3c3f1a55520_gr_session_id_4134921f-0c19-4305-b90c-6afc71edaebf=true; _gat=1; 87b5a3c3f1a55520_gr_cs1=ZaZahui528; c_a_u="WmFaYWh1aTUyOA==:1oSZvb:ts6OkGFS8I7Owmmc2X9JNJGUtBg'
-    question_title = 'Number of Islands'
+    configParser = configparser.RawConfigParser()
+    configParser.read('config.txt')
+    cookie = configParser.get("Cookies", "cookie")
+    question_title = 'Search Insert Position'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)
@@ -155,3 +164,4 @@ if __name__ == '__main__':
     generate_readme_root(res)
     generate_question_readme(res)
     refresh(res)
+    update_root_readme()

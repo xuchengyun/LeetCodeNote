@@ -3,3 +3,4 @@ classes/*
 out/*
 /Utils/LcCrawlerUtil/pkg/raw.json
 /Utils/LcCrawlerUtil/pkg/result.json
+/Utils/LcCrawlerUtil/pkg/config.txt

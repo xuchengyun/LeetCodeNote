@@ -140,12 +140,12 @@ def __update(cur, new):
 
     return grouped_list
 
-def update_root_readme():
-    with open('../../../LCQuestions/Solutions/README.md', 'r', encoding='utf-8') as f:
-        readme = f.read()
-
-    with open('../../../README.md', 'w+', encoding='utf-8') as f:
-        f.write(readme)
+# def update_root_readme():
+#     with open('../../../LCQuestions/Solutions/README.md', 'r', encoding='utf-8') as f:
+#         readme = f.read()
+#
+#     with open('../../../README.md', 'w+', encoding='utf-8') as f:
+#         f.write(readme)
 
 
 if __name__ == '__main__':
@@ -164,4 +164,4 @@ if __name__ == '__main__':
     generate_readme_root(res)
     generate_question_readme(res)
     refresh(res)
-    update_root_readme()
+    # update_root_readme()

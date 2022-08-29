@@ -1,37 +1,11 @@
-# [{}. {}]({})
-
-[中文文档]({})
-
-## Description
-
-{}
+# LeetCode
 
 ## Solutions
 
-<!-- tabs:start -->
+Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the Mac) to search anything you want.
 
-### **Python3**
+{}
 
-```python
+## Copyright
 
-```
-
-### **Java**
-
-```java
-
-```
-
-### **TypeScript**
-
-```ts
-
-```
-
-### **...**
-
-```
-
-```
-
-<!-- tabs:end -->
+[@hahagua]

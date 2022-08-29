@@ -1,6 +1,6 @@
 # LeetCode
 
-## Solutions(./LCQuestions/Solutions/README.md)
+## [Solutions](./LCQuestions/Solutions/README.md)
 
 ## Copyright
 

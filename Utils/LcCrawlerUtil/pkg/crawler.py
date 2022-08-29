@@ -217,6 +217,7 @@ class Crawler:
         no = int(frontend_question_id) // 100
 
         path = f'../../../LCQuestions/solutions/{sub_folders[no]}/_{frontend_question_id}_{quote(question_title_camel)}/README.md'
+        problem_path = f'./{sub_folders[no]}/_{frontend_question_id}_{quote(question_title_camel)}/README.md'
         print(path)
         topic_tags = question_detail.get('topicTags')
 
@@ -237,7 +238,7 @@ class Crawler:
             'title_camel': question_title_camel
         }
         col1_en = frontend_question_id  # ID
-        col2_en = f'[{item["title_en"]}]({path})'  # title
+        col2_en = f'[{item["title_en"]}]({problem_path})'  # title
         col3_en = ','.join([f'`{tag}`' for tag in item['tags']])  # tag
         col3_en = '' if (col3_en == 'None' or not col3_en) else col3_en  # place holder
         col4_en = item['difficulty']  # difficulty

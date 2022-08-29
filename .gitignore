@@ -2,3 +2,4 @@ classes/*
 .idea/*
 out/*
 /Utils/LcCrawlerUtil/pkg/raw.json
+/Utils/LcCrawlerUtil/pkg/result.json

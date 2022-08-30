@@ -13,6 +13,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0005  |  [Longest Palindromic Substring](../LCQuestions/solutions/_0000_0099/_0005_LongestPalindromicSubstring/README.md)  |  `String`,`Dynamic Programming`  |  Medium  |    |
 |  0033  |  [Search in Rotated Sorted Array](../../../LCQuestions/solutions/_0000_0099/_0033_SearchInRotatedSortedArray/README.md)  |  `Array`,`Binary Search`  |  Medium  |    |
 |  0035  |  [Search Insert Position](./_0000_0099/_0035_SearchInsertPosition/README.md)  |  `Array`,`Binary Search`  |  Easy  |    |
+|  0048  |  [Rotate Image](./_0000_0099/_0048_RotateImage/README.md)  |  `Array`,`Math`,`Matrix`  |  Medium  |    |
 |  0200  |  [Number of Islands](../../../LCQuestions/solutions/_0200_0299/_0200_NumberOfIslands/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Union Find`,`Matrix`  |  Medium  |    |
 
 ## Copyright

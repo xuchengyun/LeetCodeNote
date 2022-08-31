@@ -16,6 +16,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0048  |  [Rotate Image](./_0000_0099/_0048_RotateImage/README.md)  |  `Array`,`Math`,`Matrix`  |  Medium  |    |
 |  0200  |  [Number of Islands](../../../LCQuestions/solutions/_0200_0299/_0200_NumberOfIslands/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Union Find`,`Matrix`  |  Medium  |    |
 |  0417  |  [Pacific Atlantic Water Flow](./_0400_0499/_0417_PacificAtlanticWaterFlow/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Matrix`  |  Medium  |    |
+|  2392  |  [Build a Matrix With Conditions](./_2300_2399/_2392_BuildAMatrixWithConditions/README.md)  |  `Array`,`Graph`,`Topological Sort`,`Matrix`  |  Hard  |    |
 
 ## Copyright
 

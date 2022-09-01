@@ -18,6 +18,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0417  |  [Pacific Atlantic Water Flow](./_0400_0499/_0417_PacificAtlanticWaterFlow/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Matrix`  |  Medium  |    |
 |  1448  |  [Count Good Nodes in Binary Tree](./_1400_1499/_1448_CountGoodNodesInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Medium  |    |
 |  2392  |  [Build a Matrix With Conditions](./_2300_2399/_2392_BuildAMatrixWithConditions/README.md)  |  `Array`,`Graph`,`Topological Sort`,`Matrix`  |  Hard  |    |
+|  2393  |  [Count Strictly Increasing Subarrays](./_2300_2399/_2393_CountStrictlyIncreasingSubarrays/README.md)  |    |  Medium  |  🔒  |
 
 ## Copyright
 

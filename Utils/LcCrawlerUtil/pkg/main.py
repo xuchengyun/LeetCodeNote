@@ -152,7 +152,7 @@ if __name__ == '__main__':
     configParser = configparser.RawConfigParser()
     configParser.read('config.txt')
     cookie = configParser.get("Cookies", "cookie")
-    question_title = 'Build a Matrix With Conditions'
+    question_title = 'Count Good Nodes in Binary Tree'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

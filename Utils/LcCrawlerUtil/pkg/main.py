@@ -152,7 +152,7 @@ if __name__ == '__main__':
     configParser = configparser.RawConfigParser()
     configParser.read('config.txt')
     cookie = configParser.get("Cookies", "cookie")
-    question_title = 'Minimum Amount of Time to Collect Garbage'
+    question_title = 'Removing Stars From a String'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

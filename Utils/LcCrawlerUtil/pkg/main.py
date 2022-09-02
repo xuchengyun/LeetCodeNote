@@ -13,6 +13,8 @@ with open('./readme_template.md', 'r', encoding='utf-8') as f:
     readme_template = f.read()
 with open('./problem_readme_template.md', 'r', encoding='utf-8') as f:
     problem_readme = f.read()
+with open('./java_template', 'r', encoding='utf-8') as f:
+    java_file = f.read()
 
 
 # with open('./problem_readme_template_en.md', 'r', encoding='utf-8') as f:
@@ -28,7 +30,7 @@ with open('./problem_readme_template.md', 'r', encoding='utf-8') as f:
 
 
 def select_templates(category):
-    #TODO
+    # TODO
     # if category == 'Shell':
     #     return [bash_readme_cn, bash_readme_en]
     # if category == 'Database':
@@ -91,6 +93,35 @@ def generate_question_readme(result):
             )
 
 
+def generate_java(result):
+    for item in result:
+        if not item['content']:
+            continue
+        class_name = f'_{item["frontend_question_id"]}_{item["title_camel"]}'
+        package_name = f'LCQuestions/Solutions/{item["sub_folder"]}/{class_name}'
+        path = (
+            f'../../../{package_name}'
+        )
+        # LCQuestions.Solutions._2300_2399._2370_LongestIdealSubsequence
+        path = path.replace(":", " ")
+        if not os.path.isdir(path):
+            os.makedirs(path)
+
+        with open(f'{path}/_{item["frontend_question_id"]}_{item["title_camel"]}.java', 'w+', encoding='utf-8') as f2:
+            f2.write(
+                # readme_template.format(
+                #     int(item['frontend_question_id']),
+                #     item["title_en"],
+                #     item['url'],
+                #     item['content'],
+                # )
+                java_file.format(
+                    package_name=package_name.replace('/', '.'),
+                    class_name=class_name
+                )
+            )
+
+
 def refresh(result):
     """update problems"""
     pattern = re.compile("src=\"(.*?)\"")
@@ -140,6 +171,7 @@ def __update(cur, new):
 
     return grouped_list
 
+
 # def update_root_readme():
 #     with open('../../../LCQuestions/Solutions/README.md', 'r', encoding='utf-8') as f:
 #         readme = f.read()
@@ -152,7 +184,7 @@ if __name__ == '__main__':
     configParser = configparser.RawConfigParser()
     configParser.read('config.txt')
     cookie = configParser.get("Cookies", "cookie")
-    question_title = 'Removing Stars From a String'
+    question_title = 'Longest Subsequence With Limited Sum'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)
@@ -163,5 +195,6 @@ if __name__ == '__main__':
     #
     generate_readme_root(res)
     generate_question_readme(res)
+    generate_java(res)
     refresh(res)
     # update_root_readme()

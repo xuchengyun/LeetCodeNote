@@ -44,8 +44,29 @@ The total number of subarrays is 6 + 3 + 1 = 10.
 
 ### **Java**
 
+## Solution
+双指针
 ```java
+class Solution {
+    public long countSubarrays(int[] nums) {
+        if (nums == null || nums.length == 0) return 0;
 
+        int n = nums.length;
+        long start = 0;
+        long res = 0;
+        for (int i = 1; i < n; i++) {
+            if (nums[i] > nums[i - 1]) {
+
+            } else {
+                long len = i - start;
+                start = i;
+                res += (1 + len) * len / 2;
+            }
+        }
+        res += (n - start) * (n - start + 1) / 2;
+        return res;
+    }
+}
 ```
 
 ```

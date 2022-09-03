@@ -184,7 +184,7 @@ if __name__ == '__main__':
     configParser = configparser.RawConfigParser()
     configParser.read('config.txt')
     cookie = configParser.get("Cookies", "cookie")
-    question_title = 'Longest Subsequence With Limited Sum'
+    question_title = 'Numbers With Same Consecutive Differences'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

@@ -4,4 +4,4 @@
 
 ## Copyright
 
-[@hahagua]
+@hahagua

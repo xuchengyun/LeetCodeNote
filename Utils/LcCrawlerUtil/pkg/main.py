@@ -186,7 +186,7 @@ if __name__ == '__main__':
     configParser = configparser.RawConfigParser()
     configParser.read('config.txt')
     cookie = configParser.get("Cookies", "cookie")
-    question_title = 'N-ary Tree Level Order Traversal'
+    question_title = 'Binary Tree Pruning'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

@@ -71,7 +71,7 @@ def generate_question_readme(result):
         if not item['content']:
             continue
         path = (
-            f'../../../LCQuestions/Solutions/{item["sub_folder"]}/_{item["frontend_question_id"]}_{item["title_camel"]}'
+            f'../../../LCQuestions/Solutions/{item["sub_folder"]}/_{item["frontend_question_id"]}_{item["title_camel"]}'.replace('-', '_')
         )
         path = path.replace(":", " ")
         if not os.path.isdir(path):
@@ -97,7 +97,8 @@ def generate_java(result):
     for item in result:
         if not item['content']:
             continue
-        class_name = f'_{item["frontend_question_id"]}_{item["title_camel"]}'
+        file_raw_name = f'_{item["frontend_question_id"]}_{item["title_camel"]}'.replace('-', '_')
+        class_name = file_raw_name
         package_name = f'LCQuestions/Solutions/{item["sub_folder"]}/{class_name}'
         path = (
             f'../../../{package_name}'
@@ -107,7 +108,8 @@ def generate_java(result):
         if not os.path.isdir(path):
             os.makedirs(path)
 
-        with open(f'{path}/_{item["frontend_question_id"]}_{item["title_camel"]}.java', 'w+', encoding='utf-8') as f2:
+        file_name = f'{file_raw_name}.java'.replace('-', '_')
+        with open(f'{path}/{file_name}', 'w+', encoding='utf-8') as f2:
             f2.write(
                 # readme_template.format(
                 #     int(item['frontend_question_id']),
@@ -131,7 +133,7 @@ def refresh(result):
         print(front_question_id)
         title_en = question['title_en']
 
-        path = question['relative_path']
+        path = question['relative_path'].replace('-', '_')
         # update title
         with open(path, 'r', encoding='utf-8') as f2:
             en_content = f2.read()
@@ -184,7 +186,7 @@ if __name__ == '__main__':
     configParser = configparser.RawConfigParser()
     configParser.read('config.txt')
     cookie = configParser.get("Cookies", "cookie")
-    question_title = 'Numbers With Same Consecutive Differences'
+    question_title = 'N-ary Tree Level Order Traversal'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

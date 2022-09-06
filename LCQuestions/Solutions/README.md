@@ -16,6 +16,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0048  |  [Rotate Image](./_0000_0099/_0048_RotateImage/README.md)  |  `Array`,`Math`,`Matrix`  |  Medium  |    |
 |  0200  |  [Number of Islands](../../../LCQuestions/solutions/_0200_0299/_0200_NumberOfIslands/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Union Find`,`Matrix`  |  Medium  |    |
 |  0417  |  [Pacific Atlantic Water Flow](./_0400_0499/_0417_PacificAtlanticWaterFlow/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Matrix`  |  Medium  |    |
+|  0429  |  [N-ary Tree Level Order Traversal](./_0400_0499/_0429_N-aryTreeLevelOrderTraversal/README.md)  |  `Tree`,`Breadth-First Search`  |  Medium  |    |
 |  0637  |  [Average of Levels in Binary Tree](./_0600_0699/_0637_AverageOfLevelsInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Easy  |    |
 |  0967  |  [Numbers With Same Consecutive Differences](./_0900_0999/_0967_NumbersWithSameConsecutiveDifferences/README.md)  |  `Backtracking`,`Breadth-First Search`  |  Medium  |    |
 |  1448  |  [Count Good Nodes in Binary Tree](./_1400_1499/_1448_CountGoodNodesInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Medium  |    |

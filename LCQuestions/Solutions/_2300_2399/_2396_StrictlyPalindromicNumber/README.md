@@ -46,7 +46,11 @@ Therefore, we return false.
 ### **Java**
 
 ```java
-
+class Solution {
+    public boolean isStrictlyPalindromic(int n) {
+        return false;
+    }
+}
 ```
 
 ### **...**

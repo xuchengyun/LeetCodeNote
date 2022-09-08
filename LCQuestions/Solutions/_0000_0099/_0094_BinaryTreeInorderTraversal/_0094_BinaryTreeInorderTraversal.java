@@ -1,4 +1,4 @@
-package LCQuestions;
+package LCQuestions.Solutions._0000_0099._0094_BinaryTreeInorderTraversal;
 
 import Utils.TreeNode;
 
@@ -6,7 +6,23 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class _094_BinaryTreeInorderTraversal {
+public class _0094_BinaryTreeInorderTraversal {
+
+    public List<Integer> inorderTraversal_recursion(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        if (root == null) return res;
+        traverse(root, res);
+        return res;
+    }
+
+    private void traverse(TreeNode node, List<Integer> res) {
+        if (node == null) {
+            return;
+        }
+        traverse(node.left, res);
+        res.add(node.val);
+        traverse(node.right, res);
+    }
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         if (root == null) {

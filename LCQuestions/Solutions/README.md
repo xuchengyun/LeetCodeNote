@@ -14,6 +14,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0033  |  [Search in Rotated Sorted Array](../../../LCQuestions/solutions/_0000_0099/_0033_SearchInRotatedSortedArray/README.md)  |  `Array`,`Binary Search`  |  Medium  |    |
 |  0035  |  [Search Insert Position](./_0000_0099/_0035_SearchInsertPosition/README.md)  |  `Array`,`Binary Search`  |  Easy  |    |
 |  0048  |  [Rotate Image](./_0000_0099/_0048_RotateImage/README.md)  |  `Array`,`Math`,`Matrix`  |  Medium  |    |
+|  0094  |  [Binary Tree Inorder Traversal](./_0000_0099/_0094_BinaryTreeInorderTraversal/README.md)  |  `Stack`,`Tree`,`Depth-First Search`,`Binary Tree`  |  Easy  |    |
 |  0200  |  [Number of Islands](../../../LCQuestions/solutions/_0200_0299/_0200_NumberOfIslands/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Union Find`,`Matrix`  |  Medium  |    |
 |  0417  |  [Pacific Atlantic Water Flow](./_0400_0499/_0417_PacificAtlanticWaterFlow/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Matrix`  |  Medium  |    |
 |  0429  |  [N-ary Tree Level Order Traversal](./_0400_0499/_0429_N-aryTreeLevelOrderTraversal/README.md)  |  `Tree`,`Breadth-First Search`  |  Medium  |    |
@@ -28,6 +29,8 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  2391  |  [Minimum Amount of Time to Collect Garbage](./_2300_2399/_2391_MinimumAmountOfTimeToCollectGarbage/README.md)  |  `Array`,`String`,`Prefix Sum`  |  Medium  |    |
 |  2392  |  [Build a Matrix With Conditions](./_2300_2399/_2392_BuildAMatrixWithConditions/README.md)  |  `Array`,`Graph`,`Topological Sort`,`Matrix`  |  Hard  |    |
 |  2393  |  [Count Strictly Increasing Subarrays](./_2300_2399/_2393_CountStrictlyIncreasingSubarrays/README.md)  |    |  Medium  |  🔒  |
+|  2395  |  [Find Subarrays With Equal Sum](./_2300_2399/_2395_FindSubarraysWithEqualSum/README.md)  |  `Array`,`Hash Table`  |  Easy  |    |
+|  2396  |  [Strictly Palindromic Number](./_2300_2399/_2396_StrictlyPalindromicNumber/README.md)  |  `Math`,`Two Pointers`,`Brainteaser`  |  Medium  |    |
 
 ## Copyright
 

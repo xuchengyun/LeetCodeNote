@@ -186,7 +186,7 @@ if __name__ == '__main__':
     configParser = configparser.RawConfigParser()
     configParser.read('config.txt')
     cookie = configParser.get("Cookies", "cookie")
-    question_title = 'Binary Tree Inorder Traversal'
+    question_title = 'The Number of Weak Characters in the Game'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

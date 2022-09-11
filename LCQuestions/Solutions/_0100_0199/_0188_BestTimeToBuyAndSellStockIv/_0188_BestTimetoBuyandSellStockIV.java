@@ -1,6 +1,6 @@
-package LCQuestions;
+package LCQuestions.Solutions._0100_0199;
 
-public class _188_BestTimetoBuyandSellStockIV {
+public class _0188_BestTimetoBuyandSellStockIV {
 
     /**
      * Say you have an array for which the i-th element is the price of a given stock on day i.
@@ -46,7 +46,7 @@ public class _188_BestTimetoBuyandSellStockIV {
     }
 
 
-    //    hold[i][j]代表可以交易i次 在第j天時 持有股票的最大獲利
+//    hold[i][j]代表可以交易i次 在第j天時 持有股票的最大獲利
 //    unhold[i][j]代表可以交易i次 在第j天時 不持有股票的最大獲利
 //    若把買入股票當作交易（賣出股票就不算交易次數）
 //    遞推式是

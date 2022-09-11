@@ -15,6 +15,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0035  |  [Search Insert Position](./_0000_0099/_0035_SearchInsertPosition/README.md)  |  `Array`,`Binary Search`  |  Easy  |    |
 |  0048  |  [Rotate Image](./_0000_0099/_0048_RotateImage/README.md)  |  `Array`,`Math`,`Matrix`  |  Medium  |    |
 |  0094  |  [Binary Tree Inorder Traversal](./_0000_0099/_0094_BinaryTreeInorderTraversal/README.md)  |  `Stack`,`Tree`,`Depth-First Search`,`Binary Tree`  |  Easy  |    |
+|  0188  |  [Best Time to Buy and Sell Stock IV](./_0100_0199/_0188_BestTimeToBuyAndSellStockIv/README.md)  |  `Array`,`Dynamic Programming`  |  Hard  |    |
 |  0200  |  [Number of Islands](../../../LCQuestions/solutions/_0200_0299/_0200_NumberOfIslands/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Union Find`,`Matrix`  |  Medium  |    |
 |  0417  |  [Pacific Atlantic Water Flow](./_0400_0499/_0417_PacificAtlanticWaterFlow/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Matrix`  |  Medium  |    |
 |  0429  |  [N-ary Tree Level Order Traversal](./_0400_0499/_0429_N-aryTreeLevelOrderTraversal/README.md)  |  `Tree`,`Breadth-First Search`  |  Medium  |    |
@@ -23,6 +24,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0814  |  [Binary Tree Pruning](./_0800_0899/_0814_BinaryTreePruning/README.md)  |  `Tree`,`Depth-First Search`,`Binary Tree`  |  Medium  |    |
 |  0967  |  [Numbers With Same Consecutive Differences](./_0900_0999/_0967_NumbersWithSameConsecutiveDifferences/README.md)  |  `Backtracking`,`Breadth-First Search`  |  Medium  |    |
 |  0987  |  [Vertical Order Traversal of a Binary Tree](./_0900_0999/_0987_VerticalOrderTraversalOfABinaryTree/README.md)  |  `Hash Table`,`Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Hard  |    |
+|  1383  |  [Maximum Performance of a Team](./_1300_1399/_1383_MaximumPerformanceOfATeam/README.md)  |  `Array`,`Greedy`,`Sorting`,`Heap (Priority Queue)`  |  Hard  |    |
 |  1448  |  [Count Good Nodes in Binary Tree](./_1400_1499/_1448_CountGoodNodesInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Medium  |    |
 |  1996  |  [The Number of Weak Characters in the Game](./_1900_1999/_1996_TheNumberOfWeakCharactersInTheGame/README.md)  |  `Array`,`Stack`,`Greedy`,`Sorting`,`Monotonic Stack`  |  Medium  |    |
 |  2389  |  [Longest Subsequence With Limited Sum](./_2300_2399/_2389_LongestSubsequenceWithLimitedSum/README.md)  |  `Array`,`Binary Search`,`Greedy`,`Sorting`,`Prefix Sum`  |  Easy  |    |
@@ -32,6 +34,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  2393  |  [Count Strictly Increasing Subarrays](./_2300_2399/_2393_CountStrictlyIncreasingSubarrays/README.md)  |    |  Medium  |  🔒  |
 |  2395  |  [Find Subarrays With Equal Sum](./_2300_2399/_2395_FindSubarraysWithEqualSum/README.md)  |  `Array`,`Hash Table`  |  Easy  |    |
 |  2396  |  [Strictly Palindromic Number](./_2300_2399/_2396_StrictlyPalindromicNumber/README.md)  |  `Math`,`Two Pointers`,`Brainteaser`  |  Medium  |    |
+|  2404  |  [Most Frequent Even Element](./_2400_2499/_2404_MostFrequentEvenElement/README.md)  |    |  Easy  |    |
 
 ## Copyright
 

@@ -8,28 +8,28 @@ import Utils.ListNode;
 
 
 public class Main {
-    public static ListNode deleteMiddle(ListNode head) {
-        // 2 pass
-        int n = 0;
-        while (head != null) {
-            head = head.next;
-            n++;
-        }
-        int pos = n / 2;
-        
-        ListNode newHead = head;
-        while (newHead != null) {
-            if (pos > 1) {
-                newHead = newHead.next;
-                pos--;
-            } else {
-                break;
+    public static int minGroups(int[][] intervals) {
+
+        List<Integer> l = new ArrayList<>();
+        int res = 0;
+
+        Arrays.sort(intervals, (a, b) -> a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]);
+
+        for (int i = 0; i < intervals.length; i++) {
+            int[] interval = intervals[i];
+            boolean included = false;
+            for (int j =0; j < l.size(); j++) {
+                if (interval[0] > l.get(j)) {
+                    included = true;
+                    l.set(j, interval[1]);
+                }
+            }
+            if (!included) {
+                res++;
+                l.add(interval[1]);
             }
         }
-        if (newHead.next != null) {
-            newHead.next = newHead.next.next;
-        }
-        return head;
+        return res;
     }
 
     public static void main(String[] args) {
@@ -39,8 +39,7 @@ public class Main {
         a.next.next = new ListNode(4);
 
 
-
-        deleteMiddle(a);
+        int[][] intervals = new int[][]{};
 
     }
 }

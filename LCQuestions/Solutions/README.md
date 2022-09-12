@@ -22,6 +22,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0606  |  [Construct String from Binary Tree](./_0600_0699/_0606_ConstructStringFromBinaryTree/README.md)  |  `String`,`Tree`,`Depth-First Search`,`Binary Tree`  |  Easy  |    |
 |  0637  |  [Average of Levels in Binary Tree](./_0600_0699/_0637_AverageOfLevelsInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Easy  |    |
 |  0814  |  [Binary Tree Pruning](./_0800_0899/_0814_BinaryTreePruning/README.md)  |  `Tree`,`Depth-First Search`,`Binary Tree`  |  Medium  |    |
+|  0948  |  [Bag of Tokens](./_0900_0999/_0948_BagOfTokens/README.md)  |  `Array`,`Two Pointers`,`Greedy`,`Sorting`  |  Medium  |    |
 |  0967  |  [Numbers With Same Consecutive Differences](./_0900_0999/_0967_NumbersWithSameConsecutiveDifferences/README.md)  |  `Backtracking`,`Breadth-First Search`  |  Medium  |    |
 |  0987  |  [Vertical Order Traversal of a Binary Tree](./_0900_0999/_0987_VerticalOrderTraversalOfABinaryTree/README.md)  |  `Hash Table`,`Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Hard  |    |
 |  1383  |  [Maximum Performance of a Team](./_1300_1399/_1383_MaximumPerformanceOfATeam/README.md)  |  `Array`,`Greedy`,`Sorting`,`Heap (Priority Queue)`  |  Hard  |    |

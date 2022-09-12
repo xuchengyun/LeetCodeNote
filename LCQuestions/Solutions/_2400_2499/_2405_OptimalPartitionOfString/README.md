@@ -41,7 +41,7 @@ It can be shown that 4 is the minimum number of substrings needed.
 
 <!-- tabs:start -->
 ## Solution 1
-通过set存储当前便利的字符， 如果遇到重复的则result + 1
+通过set存储当前遍历的字符， 如果遇到重复的则result + 1
 
 ### **Java**
 ```java

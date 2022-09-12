@@ -1,8 +1,8 @@
-package LCQuestions;
+package LCQuestions.Solutions._0000_0099._0001_TwoSum;
 
 import java.util.HashMap;
 
-public class _001_TwoSum {
+public class _0001_TwoSum {
     public int[] twoSum(int[] nums, int target) {
         if (nums == null || nums.length < 2) {
             throw new IllegalArgumentException("argument is not valid");

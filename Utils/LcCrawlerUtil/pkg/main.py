@@ -188,7 +188,7 @@ if __name__ == '__main__':
     #cookie = 'configParser.get("Cookies", "cookie")'
     cookie = '1'
 
-    question_title = 'UTF-8 Validation'
+    question_title = 'Pseudo-Palindromic Paths in a Binary Tree'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

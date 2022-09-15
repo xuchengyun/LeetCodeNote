@@ -30,6 +30,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  1448  |  [Count Good Nodes in Binary Tree](./_1400_1499/_1448_CountGoodNodesInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Medium  |    |
 |  1457  |  [Pseudo-Palindromic Paths in a Binary Tree](./_1400_1499/_1457_Pseudo-palindromicPathsInABinaryTree/README.md)  |  `Bit Manipulation`,`Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Medium  |    |
 |  1996  |  [The Number of Weak Characters in the Game](./_1900_1999/_1996_TheNumberOfWeakCharactersInTheGame/README.md)  |  `Array`,`Stack`,`Greedy`,`Sorting`,`Monotonic Stack`  |  Medium  |    |
+|  2007  |  [Find Original Array From Doubled Array](./_2000_2099/_2007_FindOriginalArrayFromDoubledArray/README.md)  |  `Array`,`Hash Table`,`Greedy`,`Sorting`  |  Medium  |    |
 |  2389  |  [Longest Subsequence With Limited Sum](./_2300_2399/_2389_LongestSubsequenceWithLimitedSum/README.md)  |  `Array`,`Binary Search`,`Greedy`,`Sorting`,`Prefix Sum`  |  Easy  |    |
 |  2390  |  [Removing Stars From a String](./_2300_2399/_2390_RemovingStarsFromAString/README.md)  |  `String`,`Stack`,`Simulation`  |  Medium  |    |
 |  2391  |  [Minimum Amount of Time to Collect Garbage](./_2300_2399/_2391_MinimumAmountOfTimeToCollectGarbage/README.md)  |  `Array`,`String`,`Prefix Sum`  |  Medium  |    |

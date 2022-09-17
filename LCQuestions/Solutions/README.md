@@ -29,6 +29,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  1383  |  [Maximum Performance of a Team](./_1300_1399/_1383_MaximumPerformanceOfATeam/README.md)  |  `Array`,`Greedy`,`Sorting`,`Heap (Priority Queue)`  |  Hard  |    |
 |  1448  |  [Count Good Nodes in Binary Tree](./_1400_1499/_1448_CountGoodNodesInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Medium  |    |
 |  1457  |  [Pseudo-Palindromic Paths in a Binary Tree](./_1400_1499/_1457_Pseudo-palindromicPathsInABinaryTree/README.md)  |  `Bit Manipulation`,`Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Medium  |    |
+|  1770  |  [Maximum Score from Performing Multiplication Operations](./_1700_1799/_1770_MaximumScoreFromPerformingMultiplicationOperations/README.md)  |  `Array`,`Dynamic Programming`  |  Medium  |    |
 |  1996  |  [The Number of Weak Characters in the Game](./_1900_1999/_1996_TheNumberOfWeakCharactersInTheGame/README.md)  |  `Array`,`Stack`,`Greedy`,`Sorting`,`Monotonic Stack`  |  Medium  |    |
 |  2007  |  [Find Original Array From Doubled Array](./_2000_2099/_2007_FindOriginalArrayFromDoubledArray/README.md)  |  `Array`,`Hash Table`,`Greedy`,`Sorting`  |  Medium  |    |
 |  2389  |  [Longest Subsequence With Limited Sum](./_2300_2399/_2389_LongestSubsequenceWithLimitedSum/README.md)  |  `Array`,`Binary Search`,`Greedy`,`Sorting`,`Prefix Sum`  |  Easy  |    |

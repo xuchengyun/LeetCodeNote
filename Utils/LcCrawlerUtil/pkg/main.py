@@ -188,7 +188,7 @@ if __name__ == '__main__':
     #cookie = 'configParser.get("Cookies", "cookie")'
     cookie = '1'
 
-    question_title = 'Maximum Score from Performing Multiplication Operations'
+    question_title = 'Palindrome Pairs'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

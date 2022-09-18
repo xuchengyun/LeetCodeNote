@@ -29,7 +29,7 @@ public class _0336_PalindromePairs {
     To make the search faster, build a HashMap to store the String-idx pairs.
     */
     public List<List<Integer>> palindromePairs1(String[] words) {
-        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        List<List<Integer>> res = new ArrayList<>();
         if (words == null || words.length == 0) {
             return res;
         }
@@ -182,5 +182,10 @@ public class _0336_PalindromePairs {
         }
 
         return true;
+    }
+
+    public static void main(String[] args) {
+        String a = "a";
+        System.out.println(a.substring(0,0));
     }
 }

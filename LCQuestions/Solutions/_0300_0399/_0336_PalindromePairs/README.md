@@ -158,6 +158,72 @@ class Solution {
     }
 }
 ```
+### Solution 2 -2 改进版 hashmap
+这个做法融合前面的做法，把所有的corner case 都考虑到了
+有以下几个corner case
+- case1 一个字符串和另一个字符串的palindrome相同，在第一个循环中已经被处理了，所以第二个循环中用小于号略过这种情况
+- case2 words 中有空字符串，两个循环中，第一个循环查的是prefix的palindrome， 然后查是否后半段在map中，当cut=cur.length 时， cur_r =""
+这样可以把 [index of empty string, 当前string] 加到res 中。 第二个循环查的是suffix的 palindrome，当 cur = 0 时且后半段是palindrome，就把[当前string， index of empty string]加到res 中
+- case3 普遍情况，根据前缀后缀分别加到 palindrome中
+```java
+class Solution {
+    public List<List<Integer>> palindromePairs(String[] words) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (words == null || words.length == 0) {
+            return res;
+        }
+        Map<String, Integer> map = new HashMap<>();
+        for (int i = 0; i < words.length; i++) {
+            map.put(words[i], i);
+        }
+        
+        for (int i = 0; i < words.length; i++) {
+            String cur = words[i];
+            String reverseStr = new StringBuilder(cur).reverse().toString();
+            // 第一个循环
+            for (int cut = 0; cut <= cur.length(); cut++) {
+                if (isPalindrome(cur.substring(0, cut))) {
+                    String cut_r = reverseStr(cur.substring(cut));
+                    if (map.containsKey(cut_r)) {
+                        int found = map.get(cut_r);
+                        if (found == i) continue;
+                        res.add(Arrays.asList(found, i));
+                    }
+                }
+            }
+            // 第二个循环
+            // 这个小于号非常巧妙
+            for (int cut = 0; cut < cur.length(); cut++) {
+                if (isPalindrome(cur.substring(cut))) {
+                    String cut_r = reverseStr(cur.substring(0, cut));
+                    if (map.containsKey(cut_r)) {
+                        int found = map.get(cut_r);
+                        if (found == i) continue;
+                        res.add(Arrays.asList(i, found));
+                    }
+                }
+            }
+        }
+        return res;
+   }
+    
+    public String reverseStr(String str) {
+        StringBuilder sb = new StringBuilder(str);
+        return sb.reverse().toString();
+    }
+    
+    
+    public boolean isPalindrome(String s) {
+        int i = 0, j = s.length() - 1;
+        while (i < j) {
+            if (s.charAt(i++) != s.charAt(j--)) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+```
 ### Solution3 Trie Tree
 ```java
 class Solution {

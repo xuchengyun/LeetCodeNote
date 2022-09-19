@@ -23,6 +23,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0417  |  [Pacific Atlantic Water Flow](./_0400_0499/_0417_PacificAtlanticWaterFlow/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Matrix`  |  Medium  |    |
 |  0429  |  [N-ary Tree Level Order Traversal](./_0400_0499/_0429_N-aryTreeLevelOrderTraversal/README.md)  |  `Tree`,`Breadth-First Search`  |  Medium  |    |
 |  0606  |  [Construct String from Binary Tree](./_0600_0699/_0606_ConstructStringFromBinaryTree/README.md)  |  `String`,`Tree`,`Depth-First Search`,`Binary Tree`  |  Easy  |    |
+|  0609  |  [Find Duplicate File in System](./_0600_0699/_0609_FindDuplicateFileInSystem/README.md)  |  `Array`,`Hash Table`,`String`  |  Medium  |    |
 |  0637  |  [Average of Levels in Binary Tree](./_0600_0699/_0637_AverageOfLevelsInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Easy  |    |
 |  0814  |  [Binary Tree Pruning](./_0800_0899/_0814_BinaryTreePruning/README.md)  |  `Tree`,`Depth-First Search`,`Binary Tree`  |  Medium  |    |
 |  0948  |  [Bag of Tokens](./_0900_0999/_0948_BagOfTokens/README.md)  |  `Array`,`Two Pointers`,`Greedy`,`Sorting`  |  Medium  |    |

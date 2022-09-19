@@ -6,56 +6,23 @@ import Utils.ListNode;
 
 
 public class Main {
-    public List<List<Integer>> palindromePairs(String[] words) {
-        List<List<Integer>> res = new ArrayList<>();
-        if (words == null || words.length == 0) {
-            return res;
-        }
-        Map<String, Integer> map = new HashMap<>();
-        for (int i = 0; i < words.length; i++) {
-            map.put(words[i], i);
-        }
+    public List<List<String>> findDuplicate(String[] paths) {
+        Map<String, List<String>> map = new HashMap<>();
 
-        for (int i = 0; i < words.length; i++) {
-            String cur = words[i];
-            String reverseStr = new StringBuilder(cur).reverse().toString();
-            // if (map.containsKey("")) {
-            //     if (isPalindrome(words[i])) {
-            //         int index = map.get("");
-            //         if (i == index) continue;
-            //         res.add(Arrays.asList(index, i));
-            //         res.add(Arrays.asList(i, index));
-            //     }
-            // }
-//            if (map.containsKey(reverseStr)) {
-//                int index = map.get(reverseStr);
-//                if (index != i) {
-//                    res.add(Arrays.asList(i, index));
-//                    continue;
-//                }
-//            }
 
-            for (int cut = 0; cut <= cur.length(); cut++) {
-                if (isPalindrome(cur.substring(0, cut))) {
-                    String cut_r = reverseStr(cur.substring(cut));
-                    if (map.containsKey(cut_r)) {
-                        int found = map.get(cut_r);
-                        if (found != i) {
-                            res.add(Arrays.asList(found, i));
-                        }
-                    }
-                }
-                if (isPalindrome(cur.substring(cut))) {
-                    String cut_r = reverseStr(cur.substring(0, cut));
-                    if (map.containsKey(cut_r)) {
-                        int found = map.get(cut_r);
-                        if (found != i) {
-                            res.add(Arrays.asList(i, found));
-                        };
-                    }
-                }
+        for (String path: paths) {
+            String[] files = path.split(" ");
+            String dir = files[0];
+            for (int i = 1; i < files.length; i++) {
+                String[] fileArr = files[i].split("\\(");
+                String name = fileArr[0];
+                String hash = fileArr[1].substring(0, fileArr[1].indexOf(")"));
+                List<String> l = map.getOrDefault(hash, new ArrayList<String>());
+                l.add(dir + name);
             }
         }
+
+        List<List<String>> res = new ArrayList<>(map.values());
         return res;
     }
 
@@ -77,7 +44,7 @@ public class Main {
 
     public static void main(String[] args) {
         Main m = new Main();
-        m.palindromePairs(new String[]{"abcd","dcba","lls","s","sssll"});
+        m.findDuplicate(new String[]{"root/a 1.txt(abcd) 2.txt(efgh)","root/c 3.txt(abcd)","root/c/d 4.txt(efgh)","root 4.txt(efgh)"});
 
     }
 }

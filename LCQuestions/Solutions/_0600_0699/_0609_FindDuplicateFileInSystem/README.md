@@ -63,8 +63,6 @@
 class Solution {
     public List<List<String>> findDuplicate(String[] paths) {
         Map<String, List<String>> map = new HashMap<>();
-        
-        
         for (String path: paths) {
             String[] files = path.split(" ");
             String dir = files[0];

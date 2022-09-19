@@ -13,6 +13,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0005  |  [Longest Palindromic Substring](../LCQuestions/solutions/_0000_0099/_0005_LongestPalindromicSubstring/README.md)  |  `String`,`Dynamic Programming`  |  Medium  |    |
 |  0033  |  [Search in Rotated Sorted Array](../../../LCQuestions/solutions/_0000_0099/_0033_SearchInRotatedSortedArray/README.md)  |  `Array`,`Binary Search`  |  Medium  |    |
 |  0035  |  [Search Insert Position](./_0000_0099/_0035_SearchInsertPosition/README.md)  |  `Array`,`Binary Search`  |  Easy  |    |
+|  0042  |  [Trapping Rain Water](./_0000_0099/_0042_TrappingRainWater/README.md)  |  `Array`,`Two Pointers`,`Dynamic Programming`,`Stack`,`Monotonic Stack`  |  Hard  |    |
 |  0048  |  [Rotate Image](./_0000_0099/_0048_RotateImage/README.md)  |  `Array`,`Math`,`Matrix`  |  Medium  |    |
 |  0094  |  [Binary Tree Inorder Traversal](./_0000_0099/_0094_BinaryTreeInorderTraversal/README.md)  |  `Stack`,`Tree`,`Depth-First Search`,`Binary Tree`  |  Easy  |    |
 |  0188  |  [Best Time to Buy and Sell Stock IV](./_0100_0199/_0188_BestTimeToBuyAndSellStockIv/README.md)  |  `Array`,`Dynamic Programming`  |  Hard  |    |

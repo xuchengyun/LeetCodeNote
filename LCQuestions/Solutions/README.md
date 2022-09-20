@@ -25,6 +25,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0606  |  [Construct String from Binary Tree](./_0600_0699/_0606_ConstructStringFromBinaryTree/README.md)  |  `String`,`Tree`,`Depth-First Search`,`Binary Tree`  |  Easy  |    |
 |  0609  |  [Find Duplicate File in System](./_0600_0699/_0609_FindDuplicateFileInSystem/README.md)  |  `Array`,`Hash Table`,`String`  |  Medium  |    |
 |  0637  |  [Average of Levels in Binary Tree](./_0600_0699/_0637_AverageOfLevelsInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Easy  |    |
+|  0718  |  [Maximum Length of Repeated Subarray](./_0700_0799/_0718_MaximumLengthOfRepeatedSubarray/README.md)  |  `Array`,`Binary Search`,`Dynamic Programming`,`Sliding Window`,`Rolling Hash`,`Hash Function`  |  Medium  |    |
 |  0814  |  [Binary Tree Pruning](./_0800_0899/_0814_BinaryTreePruning/README.md)  |  `Tree`,`Depth-First Search`,`Binary Tree`  |  Medium  |    |
 |  0948  |  [Bag of Tokens](./_0900_0999/_0948_BagOfTokens/README.md)  |  `Array`,`Two Pointers`,`Greedy`,`Sorting`  |  Medium  |    |
 |  0967  |  [Numbers With Same Consecutive Differences](./_0900_0999/_0967_NumbersWithSameConsecutiveDifferences/README.md)  |  `Backtracking`,`Breadth-First Search`  |  Medium  |    |

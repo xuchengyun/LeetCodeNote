@@ -45,6 +45,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  2396  |  [Strictly Palindromic Number](./_2300_2399/_2396_StrictlyPalindromicNumber/README.md)  |  `Math`,`Two Pointers`,`Brainteaser`  |  Medium  |    |
 |  2404  |  [Most Frequent Even Element](./_2400_2499/_2404_MostFrequentEvenElement/README.md)  |    |  Easy  |    |
 |  2405  |  [Optimal Partition of String](./_2400_2499/_2405_OptimalPartitionOfString/README.md)  |    |  Medium  |    |
+|  2416  |  [Sum of Prefix Scores of Strings](./_2400_2499/_2416_SumOfPrefixScoresOfStrings/README.md)  |  `Array`,`String`,`Trie`,`Counting`  |  Hard  |    |
 
 ## Copyright
 

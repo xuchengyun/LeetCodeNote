@@ -188,7 +188,7 @@ if __name__ == '__main__':
     #cookie = 'configParser.get("Cookies", "cookie")'
     cookie = '1'
 
-    question_title = 'Maximum Length of Repeated Subarray'
+    question_title = 'Sum of Prefix Scores of Strings'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

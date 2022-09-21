@@ -6,45 +6,30 @@ import Utils.ListNode;
 
 
 public class Main {
-    public List<List<String>> findDuplicate(String[] paths) {
-        Map<String, List<String>> map = new HashMap<>();
-
-
-        for (String path: paths) {
-            String[] files = path.split(" ");
-            String dir = files[0];
-            for (int i = 1; i < files.length; i++) {
-                String[] fileArr = files[i].split("\\(");
-                String name = fileArr[0];
-                String hash = fileArr[1].substring(0, fileArr[1].indexOf(")"));
-                List<String> l = map.getOrDefault(hash, new ArrayList<String>());
-                l.add(dir + name);
+    public int[] sumPrefixScores(String[] words) {
+        int n = words.length, p = 31, m = (int)1e9 + 9;
+        int[] ans = new int[n];
+        long[] hash = new long[n], p_pow = new long[n];
+        Arrays.fill(p_pow,1);
+        for(int i = 0; i < 1000; i++){
+            Map<Long,Integer> map = new HashMap<>();
+            for(int j = 0; j < n; j++){
+                if(words[j].length() <= i) continue;
+                hash[j] = (hash[j] + (words[j].charAt(i) - 'a' + 1) * p_pow[j]) % m;
+                p_pow[j] = (p_pow[j] * p) % m;
+                map.put(hash[j], map.getOrDefault(hash[j],0) + 1);
+            }
+            for(int j = 0; j < n; j++){
+                if(words[j].length() <= i) continue;
+                ans[j] += map.get(hash[j]);
             }
         }
-
-        List<List<String>> res = new ArrayList<>(map.values());
-        return res;
-    }
-
-    public String reverseStr(String str) {
-        StringBuilder sb = new StringBuilder(str);
-        return sb.reverse().toString();
-    }
-
-
-    public boolean isPalindrome(String s) {
-        int i = 0, j = s.length() - 1;
-        while (i <= j) {
-            if (s.charAt(i++) != s.charAt(j--)) {
-                return false;
-            }
-        }
-        return true;
+        return ans;
     }
 
     public static void main(String[] args) {
         Main m = new Main();
-        m.findDuplicate(new String[]{"root/a 1.txt(abcd) 2.txt(efgh)","root/c 3.txt(abcd)","root/c/d 4.txt(efgh)","root 4.txt(efgh)"});
+        m.sumPrefixScores(new String[]{"abc","ab","bc","b"});
 
     }
 }

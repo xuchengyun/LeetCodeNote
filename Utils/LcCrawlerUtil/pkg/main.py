@@ -188,7 +188,7 @@ if __name__ == '__main__':
     #cookie = 'configParser.get("Cookies", "cookie")'
     cookie = '1'
 
-    question_title = 'Sum of Prefix Scores of Strings'
+    question_title = 'Sum of Even Numbers After Queries'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

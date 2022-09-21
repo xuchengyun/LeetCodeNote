@@ -29,6 +29,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0814  |  [Binary Tree Pruning](./_0800_0899/_0814_BinaryTreePruning/README.md)  |  `Tree`,`Depth-First Search`,`Binary Tree`  |  Medium  |    |
 |  0948  |  [Bag of Tokens](./_0900_0999/_0948_BagOfTokens/README.md)  |  `Array`,`Two Pointers`,`Greedy`,`Sorting`  |  Medium  |    |
 |  0967  |  [Numbers With Same Consecutive Differences](./_0900_0999/_0967_NumbersWithSameConsecutiveDifferences/README.md)  |  `Backtracking`,`Breadth-First Search`  |  Medium  |    |
+|  0985  |  [Sum of Even Numbers After Queries](./_0900_0999/_0985_SumOfEvenNumbersAfterQueries/README.md)  |  `Array`,`Simulation`  |  Medium  |    |
 |  0987  |  [Vertical Order Traversal of a Binary Tree](./_0900_0999/_0987_VerticalOrderTraversalOfABinaryTree/README.md)  |  `Hash Table`,`Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Hard  |    |
 |  1383  |  [Maximum Performance of a Team](./_1300_1399/_1383_MaximumPerformanceOfATeam/README.md)  |  `Array`,`Greedy`,`Sorting`,`Heap (Priority Queue)`  |  Hard  |    |
 |  1448  |  [Count Good Nodes in Binary Tree](./_1400_1499/_1448_CountGoodNodesInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Medium  |    |

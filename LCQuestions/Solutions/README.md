@@ -22,6 +22,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0393  |  [UTF-8 Validation](./_0300_0399/_0393_Utf-8Validation/README.md)  |  `Array`,`Bit Manipulation`  |  Medium  |    |
 |  0417  |  [Pacific Atlantic Water Flow](./_0400_0499/_0417_PacificAtlanticWaterFlow/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Matrix`  |  Medium  |    |
 |  0429  |  [N-ary Tree Level Order Traversal](./_0400_0499/_0429_N-aryTreeLevelOrderTraversal/README.md)  |  `Tree`,`Breadth-First Search`  |  Medium  |    |
+|  0557  |  [Reverse Words in a String III](./_0500_0599/_0557_ReverseWordsInAStringIii/README.md)  |  `Two Pointers`,`String`  |  Easy  |    |
 |  0606  |  [Construct String from Binary Tree](./_0600_0699/_0606_ConstructStringFromBinaryTree/README.md)  |  `String`,`Tree`,`Depth-First Search`,`Binary Tree`  |  Easy  |    |
 |  0609  |  [Find Duplicate File in System](./_0600_0699/_0609_FindDuplicateFileInSystem/README.md)  |  `Array`,`Hash Table`,`String`  |  Medium  |    |
 |  0637  |  [Average of Levels in Binary Tree](./_0600_0699/_0637_AverageOfLevelsInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Easy  |    |

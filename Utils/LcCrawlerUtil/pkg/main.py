@@ -188,7 +188,7 @@ if __name__ == '__main__':
     cookie = configParser.get("Cookies", "cookie")
     # cookie = '1'
 
-    question_title = 'Closest Fair Integer'
+    question_title = 'Concatenation of Consecutive Binary Numbers'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

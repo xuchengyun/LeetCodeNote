@@ -9,7 +9,7 @@ public class _1996_TheNumberOfWeakCharactersInTheGame {
         }
         /**
          * sort attack in ascending order, sort defense in descending order, so
-         * in case of a tie in the attack values, we can ignore the defsnse value of the pairs
+         * in case of a tie in the attack values, we can ignore the defense value of the pairs
          * with the same attack value.
         */
         Arrays.sort(properties, (a, b) -> a[0] == b[0] ? b[1] - a[1] : a[0] - b[0]);

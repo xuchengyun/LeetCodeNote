@@ -46,21 +46,8 @@
 
 ```java
 class Solution {
-    public int longestContinuousSubstring(String s) {
-        char[] cArr = s.toCharArray();
-        int len = s.length();
-        // 2 pointers;
-        int res = 1;
-        int cur = 1;
-        for (int i = 0; i < len - 1; i++) {
-            if (cArr[i + 1] - cArr[i] == 1) {
-                cur++;
-            } else{
-                cur = 1;
-            }
-            res = Math.max(cur, res);
-        }
-        return res;
+    public int smallestEvenMultiple(int n) {
+        return n << (n & 1);
     }
 }
 ```

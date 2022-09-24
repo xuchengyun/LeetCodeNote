@@ -188,7 +188,7 @@ if __name__ == '__main__':
     cookie = configParser.get("Cookies", "cookie")
     # cookie = '1'
 
-    question_title = 'Path Sum II'
+    question_title = 'Design SQL'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

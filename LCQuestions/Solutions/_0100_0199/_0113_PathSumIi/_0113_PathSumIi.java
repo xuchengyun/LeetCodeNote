@@ -34,8 +34,8 @@ public class _0113_PathSumIi {
 
     // DFS
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
-        List<List<Integer>> pathsList = new ArrayList<List<Integer>>();
-        List<Integer> pathNodes = new ArrayList<Integer>();
+        List<List<Integer>> pathsList = new ArrayList<>();
+        List<Integer> pathNodes = new ArrayList<>();
         this.recurseTree(root, sum, pathNodes, pathsList);
         return pathsList;
     }

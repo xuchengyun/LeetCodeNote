@@ -1,4 +1,4 @@
-package LCQuestions;
+package LCQuestions.Solutions._0100_0199._0113_PathSumIi;
 
 import Utils.TreeNode;
 
@@ -33,6 +33,7 @@ public class _113_PathSumII {
         temp.remove(temp.size() - 1);
     }
 
+    // Iterative
     public List<List<Integer>> pathSum1(TreeNode root, int sum) {
         List<List<Integer>> list = new ArrayList<>();
         if (root == null) return list;

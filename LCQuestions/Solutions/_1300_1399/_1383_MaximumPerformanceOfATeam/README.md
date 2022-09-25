@@ -49,14 +49,42 @@ We have the maximum performance of the team by selecting engineer 2 (with speed=
 
 
 ## Solutions
-
+### Solution 1 Priority Queue
 <!-- tabs:start -->
+Same ideal with **857. Minimum Cost to Hire K Workers.**
 
+`Performance = sum(speed) * min(efficiency)`. Idea is simple: try every efficiency value from highest to lowest and at the same time maintain an as-large-as-possible speed group, keep adding speed to total speed, if size of engineers group exceeds K, lay off the engineer with lowest speed.
+
+1. Sort efficiency with descending order. Because, afterwards, when we iterate whole engineers, every round, when calculating the current performance, minimum efficiency is the effiency of the new incoming engineer.
+2. Maintain a pq to track of the minimum speed in the group. If size of group is == K, kick the engineer with minimum speed out (since efficiency is fixed by new coming engineer, the only thing matters now is sum of speed).
+3. Calculate/Update performance.
 
 ### **Java**
 
 ```java
-
+class Solution {
+    public int maxPerformance(int n, int[] speed, int[] efficiency, int k) {
+        int[][] engineers = new int[n][2];
+        for (int i = 0; i < n; i++) {
+            engineers[i] = new int[]{speed[i], efficiency[i]};
+        }
+        // Sort by efficiency
+        Arrays.sort(engineers, (a, b) -> (b[1] - a[1]));
+        Queue<Integer> pq = new PriorityQueue<>(k + 1);
+        
+        long res = 0, sumSpeed = 0;
+        for (int[] engineer: engineers) {
+            pq.add(engineer[0]);
+            sumSpeed += engineer[0];
+            if (pq.size() > k) {
+                sumSpeed -= pq.poll();
+            }
+            res = Math.max(res, sumSpeed * engineer[1]);
+        }
+        
+        return (int)(res % (int)(1e9 + 7));
+    }
+}
 ```
 
 ### **...**

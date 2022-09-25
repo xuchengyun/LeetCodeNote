@@ -16,6 +16,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0042  |  [Trapping Rain Water](./_0000_0099/_0042_TrappingRainWater/README.md)  |  `Array`,`Two Pointers`,`Dynamic Programming`,`Stack`,`Monotonic Stack`  |  Hard  |    |
 |  0048  |  [Rotate Image](./_0000_0099/_0048_RotateImage/README.md)  |  `Array`,`Math`,`Matrix`  |  Medium  |    |
 |  0094  |  [Binary Tree Inorder Traversal](./_0000_0099/_0094_BinaryTreeInorderTraversal/README.md)  |  `Stack`,`Tree`,`Depth-First Search`,`Binary Tree`  |  Easy  |    |
+|  0113  |  [Path Sum II](./_0100_0199/_0113_PathSumIi/README.md)  |  `Backtracking`,`Tree`,`Depth-First Search`,`Binary Tree`  |  Medium  |    |
 |  0188  |  [Best Time to Buy and Sell Stock IV](./_0100_0199/_0188_BestTimeToBuyAndSellStockIv/README.md)  |  `Array`,`Dynamic Programming`  |  Hard  |    |
 |  0200  |  [Number of Islands](../../../LCQuestions/solutions/_0200_0299/_0200_NumberOfIslands/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Union Find`,`Matrix`  |  Medium  |    |
 |  0336  |  [Palindrome Pairs](./_0300_0399/_0336_PalindromePairs/README.md)  |  `Array`,`Hash Table`,`String`,`Trie`  |  Hard  |    |
@@ -36,6 +37,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  1383  |  [Maximum Performance of a Team](./_1300_1399/_1383_MaximumPerformanceOfATeam/README.md)  |  `Array`,`Greedy`,`Sorting`,`Heap (Priority Queue)`  |  Hard  |    |
 |  1448  |  [Count Good Nodes in Binary Tree](./_1400_1499/_1448_CountGoodNodesInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Medium  |    |
 |  1457  |  [Pseudo-Palindromic Paths in a Binary Tree](./_1400_1499/_1457_Pseudo-palindromicPathsInABinaryTree/README.md)  |  `Bit Manipulation`,`Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Medium  |    |
+|  1680  |  [Concatenation of Consecutive Binary Numbers](./_1600_1699/_1680_ConcatenationOfConsecutiveBinaryNumbers/README.md)  |  `Math`,`Bit Manipulation`,`Simulation`  |  Medium  |    |
 |  1770  |  [Maximum Score from Performing Multiplication Operations](./_1700_1799/_1770_MaximumScoreFromPerformingMultiplicationOperations/README.md)  |  `Array`,`Dynamic Programming`  |  Medium  |    |
 |  1996  |  [The Number of Weak Characters in the Game](./_1900_1999/_1996_TheNumberOfWeakCharactersInTheGame/README.md)  |  `Array`,`Stack`,`Greedy`,`Sorting`,`Monotonic Stack`  |  Medium  |    |
 |  2007  |  [Find Original Array From Doubled Array](./_2000_2099/_2007_FindOriginalArrayFromDoubledArray/README.md)  |  `Array`,`Hash Table`,`Greedy`,`Sorting`  |  Medium  |    |
@@ -48,6 +50,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  2396  |  [Strictly Palindromic Number](./_2300_2399/_2396_StrictlyPalindromicNumber/README.md)  |  `Math`,`Two Pointers`,`Brainteaser`  |  Medium  |    |
 |  2404  |  [Most Frequent Even Element](./_2400_2499/_2404_MostFrequentEvenElement/README.md)  |    |  Easy  |    |
 |  2405  |  [Optimal Partition of String](./_2400_2499/_2405_OptimalPartitionOfString/README.md)  |    |  Medium  |    |
+|  2408  |  [Design SQL](./_2400_2499/_2408_DesignSql/README.md)  |  `Array`,`Hash Table`,`String`,`Design`  |  Medium  |  🔒  |
 |  2414  |  [Length of the Longest Alphabetical Continuous Substring](./_2400_2499/_2414_LengthOfTheLongestAlphabeticalContinuousSubstring/README.md)  |  `String`  |  Medium  |    |
 |  2415  |  [Reverse Odd Levels of Binary Tree](./_2400_2499/_2415_ReverseOddLevelsOfBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Medium  |    |
 |  2416  |  [Sum of Prefix Scores of Strings](./_2400_2499/_2416_SumOfPrefixScoresOfStrings/README.md)  |  `Array`,`String`,`Trie`,`Counting`  |  Hard  |    |

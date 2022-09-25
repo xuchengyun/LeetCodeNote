@@ -61,7 +61,71 @@ myCircularQueue.Rear();     // return 4
 ### **Java**
 
 ```java
+class MyCircularQueue {
 
+    int head, tail, count, size;
+    int[] data;
+    private ReentrantLock queueLock = new ReentrantLock();
+
+    public MyCircularQueue(int k) {
+        this.head = 0;
+        this.tail = 0;
+        this.count = 0;
+        this.size = k;
+        this.data = new int[k];
+    }
+    
+    public boolean enQueue(int value) {
+        queueLock.lock();
+        try {
+            if (!isFull()) {
+                data[tail] = value;
+                tail = (tail + 1) % size;
+                count++;
+                return true;
+            } else {
+                return false;
+            }   
+        } finally {
+            queueLock.unlock();
+        }
+    }
+    
+    public boolean deQueue() {
+        if (!isEmpty()) {
+            data[head] = 0;
+            head = (head + 1) % size;
+            count--;
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    public int Front() {
+        if (isEmpty()) {
+            return -1;
+        } else {
+            return data[head];
+        }
+    }
+    
+    public int Rear() {
+        if (isEmpty()) {
+            return -1;
+        } else {
+            return data[(size + tail - 1) % size];
+        }
+    }
+    
+    public boolean isEmpty() {
+        return count == 0;
+    }
+    
+    public boolean isFull() {
+        return count == size;
+    }
+}
 ```
 
 ### **...**

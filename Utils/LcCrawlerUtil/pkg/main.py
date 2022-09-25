@@ -185,10 +185,10 @@ def __update(cur, new):
 if __name__ == '__main__':
     configParser = configparser.RawConfigParser()
     configParser.read('config.txt')
-    cookie = configParser.get("Cookies", "cookie")
-    # cookie = '1'
+    # cookie = configParser.get("Cookies", "cookie")
+    cookie = '1'
 
-    question_title = 'Closest Fair Integer'
+    question_title = 'Design Circular Queue'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

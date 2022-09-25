@@ -25,6 +25,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0557  |  [Reverse Words in a String III](./_0500_0599/_0557_ReverseWordsInAStringIii/README.md)  |  `Two Pointers`,`String`  |  Easy  |    |
 |  0606  |  [Construct String from Binary Tree](./_0600_0699/_0606_ConstructStringFromBinaryTree/README.md)  |  `String`,`Tree`,`Depth-First Search`,`Binary Tree`  |  Easy  |    |
 |  0609  |  [Find Duplicate File in System](./_0600_0699/_0609_FindDuplicateFileInSystem/README.md)  |  `Array`,`Hash Table`,`String`  |  Medium  |    |
+|  0622  |  [Design Circular Queue](./_0600_0699/_0622_DesignCircularQueue/README.md)  |  `Array`,`Linked List`,`Design`,`Queue`  |  Medium  |    |
 |  0637  |  [Average of Levels in Binary Tree](./_0600_0699/_0637_AverageOfLevelsInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Easy  |    |
 |  0718  |  [Maximum Length of Repeated Subarray](./_0700_0799/_0718_MaximumLengthOfRepeatedSubarray/README.md)  |  `Array`,`Binary Search`,`Dynamic Programming`,`Sliding Window`,`Rolling Hash`,`Hash Function`  |  Medium  |    |
 |  0814  |  [Binary Tree Pruning](./_0800_0899/_0814_BinaryTreePruning/README.md)  |  `Tree`,`Depth-First Search`,`Binary Tree`  |  Medium  |    |

@@ -1,4 +1,4 @@
-package LCQuestions.Solutions._0100_0199;
+package LCQuestions.Solutions._0100_0199._0188_BestTimeToBuyAndSellStockIv;
 
 public class _0188_BestTimetoBuyandSellStockIV {
 

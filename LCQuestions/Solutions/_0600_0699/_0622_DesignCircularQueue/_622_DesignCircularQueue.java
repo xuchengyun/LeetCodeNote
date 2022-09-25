@@ -1,4 +1,4 @@
-package LCQuestions;
+package LCQuestions.Solutions._0600_0699._0622_DesignCircularQueue;
 
 public class _622_DesignCircularQueue {
     int size;

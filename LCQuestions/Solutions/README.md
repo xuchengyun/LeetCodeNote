@@ -55,6 +55,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  2415  |  [Reverse Odd Levels of Binary Tree](./_2400_2499/_2415_ReverseOddLevelsOfBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Medium  |    |
 |  2416  |  [Sum of Prefix Scores of Strings](./_2400_2499/_2416_SumOfPrefixScoresOfStrings/README.md)  |  `Array`,`String`,`Trie`,`Counting`  |  Hard  |    |
 |  2417  |  [Closest Fair Integer](./_2400_2499/_2417_ClosestFairInteger/README.md)  |    |  Medium  |  🔒  |
+|  2418  |  [Sort the People](./_2400_2499/_2418_SortThePeople/README.md)  |    |  Easy  |    |
 
 ## Copyright
 

@@ -188,7 +188,7 @@ if __name__ == '__main__':
     # cookie = configParser.get("Cookies", "cookie")
     cookie = '1'
 
-    question_title = 'Satisfiability of Equality Equations'
+    question_title = 'Push Dominoes'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

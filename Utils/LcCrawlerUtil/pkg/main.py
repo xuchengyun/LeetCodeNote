@@ -188,7 +188,7 @@ if __name__ == '__main__':
     # cookie = configParser.get("Cookies", "cookie")
     cookie = '1'
 
-    question_title = 'Remove Nth Node From End of List'
+    question_title = 'Find K Closest Elements'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

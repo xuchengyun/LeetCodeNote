@@ -29,6 +29,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0609  |  [Find Duplicate File in System](./_0600_0699/_0609_FindDuplicateFileInSystem/README.md)  |  `Array`,`Hash Table`,`String`  |  Medium  |    |
 |  0622  |  [Design Circular Queue](./_0600_0699/_0622_DesignCircularQueue/README.md)  |  `Array`,`Linked List`,`Design`,`Queue`  |  Medium  |    |
 |  0637  |  [Average of Levels in Binary Tree](./_0600_0699/_0637_AverageOfLevelsInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Easy  |    |
+|  0658  |  [Find K Closest Elements](./_0600_0699/_0658_FindKClosestElements/README.md)  |  `Array`,`Two Pointers`,`Binary Search`,`Sorting`,`Heap (Priority Queue)`  |  Medium  |    |
 |  0718  |  [Maximum Length of Repeated Subarray](./_0700_0799/_0718_MaximumLengthOfRepeatedSubarray/README.md)  |  `Array`,`Binary Search`,`Dynamic Programming`,`Sliding Window`,`Rolling Hash`,`Hash Function`  |  Medium  |    |
 |  0814  |  [Binary Tree Pruning](./_0800_0899/_0814_BinaryTreePruning/README.md)  |  `Tree`,`Depth-First Search`,`Binary Tree`  |  Medium  |    |
 |  0838  |  [Push Dominoes](./_0800_0899/_0838_PushDominoes/README.md)  |  `Two Pointers`,`String`,`Dynamic Programming`  |  Medium  |    |
@@ -59,6 +60,8 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  2416  |  [Sum of Prefix Scores of Strings](./_2400_2499/_2416_SumOfPrefixScoresOfStrings/README.md)  |  `Array`,`String`,`Trie`,`Counting`  |  Hard  |    |
 |  2417  |  [Closest Fair Integer](./_2400_2499/_2417_ClosestFairInteger/README.md)  |    |  Medium  |  🔒  |
 |  2418  |  [Sort the People](./_2400_2499/_2418_SortThePeople/README.md)  |    |  Easy  |    |
+|  2419  |  [Longest Subarray With Maximum Bitwise AND](./_2400_2499/_2419_LongestSubarrayWithMaximumBitwiseAnd/README.md)  |  `Array`,`Bit Manipulation`,`Brainteaser`  |  Medium  |    |
+|  2420  |  [Find All Good Indices](./_2400_2499/_2420_FindAllGoodIndices/README.md)  |  `Array`,`Dynamic Programming`,`Prefix Sum`  |  Medium  |    |
 
 ## Copyright
 

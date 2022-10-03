@@ -1,4 +1,4 @@
-package LCQuestions;
+package LCQuestions.Solutions._0200_0299._0218_TheSkylineProblem;
 
 import java.util.*;
 

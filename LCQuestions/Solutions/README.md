@@ -20,6 +20,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0113  |  [Path Sum II](./_0100_0199/_0113_PathSumIi/README.md)  |  `Backtracking`,`Tree`,`Depth-First Search`,`Binary Tree`  |  Medium  |    |
 |  0188  |  [Best Time to Buy and Sell Stock IV](./_0100_0199/_0188_BestTimeToBuyAndSellStockIv/README.md)  |  `Array`,`Dynamic Programming`  |  Hard  |    |
 |  0200  |  [Number of Islands](../../../LCQuestions/solutions/_0200_0299/_0200_NumberOfIslands/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Union Find`,`Matrix`  |  Medium  |    |
+|  0218  |  [The Skyline Problem](./_0200_0299/_0218_TheSkylineProblem/README.md)  |  `Array`,`Divide and Conquer`,`Binary Indexed Tree`,`Segment Tree`,`Line Sweep`,`Heap (Priority Queue)`,`Ordered Set`  |  Hard  |    |
 |  0336  |  [Palindrome Pairs](./_0300_0399/_0336_PalindromePairs/README.md)  |  `Array`,`Hash Table`,`String`,`Trie`  |  Hard  |    |
 |  0393  |  [UTF-8 Validation](./_0300_0399/_0393_Utf-8Validation/README.md)  |  `Array`,`Bit Manipulation`  |  Medium  |    |
 |  0417  |  [Pacific Atlantic Water Flow](./_0400_0499/_0417_PacificAtlanticWaterFlow/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Matrix`  |  Medium  |    |
@@ -41,6 +42,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  1383  |  [Maximum Performance of a Team](./_1300_1399/_1383_MaximumPerformanceOfATeam/README.md)  |  `Array`,`Greedy`,`Sorting`,`Heap (Priority Queue)`  |  Hard  |    |
 |  1448  |  [Count Good Nodes in Binary Tree](./_1400_1499/_1448_CountGoodNodesInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Medium  |    |
 |  1457  |  [Pseudo-Palindromic Paths in a Binary Tree](./_1400_1499/_1457_Pseudo-palindromicPathsInABinaryTree/README.md)  |  `Bit Manipulation`,`Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Medium  |    |
+|  1578  |  [Minimum Time to Make Rope Colorful](./_1500_1599/_1578_MinimumTimeToMakeRopeColorful/README.md)  |  `Array`,`String`,`Dynamic Programming`,`Greedy`  |  Medium  |    |
 |  1680  |  [Concatenation of Consecutive Binary Numbers](./_1600_1699/_1680_ConcatenationOfConsecutiveBinaryNumbers/README.md)  |  `Math`,`Bit Manipulation`,`Simulation`  |  Medium  |    |
 |  1770  |  [Maximum Score from Performing Multiplication Operations](./_1700_1799/_1770_MaximumScoreFromPerformingMultiplicationOperations/README.md)  |  `Array`,`Dynamic Programming`  |  Medium  |    |
 |  1996  |  [The Number of Weak Characters in the Game](./_1900_1999/_1996_TheNumberOfWeakCharactersInTheGame/README.md)  |  `Array`,`Stack`,`Greedy`,`Sorting`,`Monotonic Stack`  |  Medium  |    |

@@ -188,7 +188,7 @@ if __name__ == '__main__':
     # cookie = configParser.get("Cookies", "cookie")
     cookie = '1'
 
-    question_title = 'Minimum Time to Make Rope Colorful'
+    question_title = 'Path Sum'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

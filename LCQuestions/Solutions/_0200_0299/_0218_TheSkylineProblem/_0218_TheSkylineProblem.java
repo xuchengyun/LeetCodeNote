@@ -4,7 +4,7 @@ import java.util.List;
 
 public class _0218_TheSkylineProblem {
     public List<List<Integer>> getSkyline(int[][] buildings) {
-
+        return null;
     }
 
 }

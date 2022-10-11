@@ -188,7 +188,7 @@ if __name__ == '__main__':
     # cookie = configParser.get("Cookies", "cookie")
     cookie = '1'
 
-    question_title = 'Path Sum'
+    question_title = 'Increasing Triplet Subsequence'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

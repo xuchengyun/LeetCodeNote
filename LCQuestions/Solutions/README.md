@@ -22,6 +22,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0188  |  [Best Time to Buy and Sell Stock IV](./_0100_0199/_0188_BestTimeToBuyAndSellStockIv/README.md)  |  `Array`,`Dynamic Programming`  |  Hard  |    |
 |  0200  |  [Number of Islands](../../../LCQuestions/solutions/_0200_0299/_0200_NumberOfIslands/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Union Find`,`Matrix`  |  Medium  |    |
 |  0218  |  [The Skyline Problem](./_0200_0299/_0218_TheSkylineProblem/README.md)  |  `Array`,`Divide and Conquer`,`Binary Indexed Tree`,`Segment Tree`,`Line Sweep`,`Heap (Priority Queue)`,`Ordered Set`  |  Hard  |    |
+|  0334  |  [Increasing Triplet Subsequence](./_0300_0399/_0334_IncreasingTripletSubsequence/README.md)  |  `Array`,`Greedy`  |  Medium  |    |
 |  0336  |  [Palindrome Pairs](./_0300_0399/_0336_PalindromePairs/README.md)  |  `Array`,`Hash Table`,`String`,`Trie`  |  Hard  |    |
 |  0393  |  [UTF-8 Validation](./_0300_0399/_0393_Utf-8Validation/README.md)  |  `Array`,`Bit Manipulation`  |  Medium  |    |
 |  0417  |  [Pacific Atlantic Water Flow](./_0400_0499/_0417_PacificAtlanticWaterFlow/README.md)  |  `Array`,`Depth-First Search`,`Breadth-First Search`,`Matrix`  |  Medium  |    |

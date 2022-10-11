@@ -66,6 +66,10 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  2418  |  [Sort the People](./_2400_2499/_2418_SortThePeople/README.md)  |    |  Easy  |    |
 |  2419  |  [Longest Subarray With Maximum Bitwise AND](./_2400_2499/_2419_LongestSubarrayWithMaximumBitwiseAnd/README.md)  |  `Array`,`Bit Manipulation`,`Brainteaser`  |  Medium  |    |
 |  2420  |  [Find All Good Indices](./_2400_2499/_2420_FindAllGoodIndices/README.md)  |  `Array`,`Dynamic Programming`,`Prefix Sum`  |  Medium  |    |
+|  2432  |  [The Employee That Worked on the Longest Task](./_2400_2499/_2432_TheEmployeeThatWorkedOnTheLongestTask/README.md)  |  `Array`  |  Easy  |    |
+|  2433  |  [Find The Original Array of Prefix Xor](./_2400_2499/_2433_FindTheOriginalArrayOfPrefixXor/README.md)  |  `Array`,`Bit Manipulation`  |  Medium  |    |
+|  2434  |  [Using a Robot to Print the Lexicographically Smallest String](./_2400_2499/_2434_UsingARobotToPrintTheLexicographicallySmallestString/README.md)  |  `Hash Table`,`String`,`Stack`,`Greedy`  |  Medium  |    |
+|  2435  |  [Paths in Matrix Whose Sum Is Divisible by K](./_2400_2499/_2435_PathsInMatrixWhoseSumIsDivisibleByK/README.md)  |  `Array`,`Dynamic Programming`,`Matrix`  |  Hard  |    |
 
 ## Copyright
 

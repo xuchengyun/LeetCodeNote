@@ -38,6 +38,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0838  |  [Push Dominoes](./_0800_0899/_0838_PushDominoes/README.md)  |  `Two Pointers`,`String`,`Dynamic Programming`  |  Medium  |    |
 |  0948  |  [Bag of Tokens](./_0900_0999/_0948_BagOfTokens/README.md)  |  `Array`,`Two Pointers`,`Greedy`,`Sorting`  |  Medium  |    |
 |  0967  |  [Numbers With Same Consecutive Differences](./_0900_0999/_0967_NumbersWithSameConsecutiveDifferences/README.md)  |  `Backtracking`,`Breadth-First Search`  |  Medium  |    |
+|  0976  |  [Largest Perimeter Triangle](./_0900_0999/_0976_LargestPerimeterTriangle/README.md)  |  `Array`,`Math`,`Greedy`,`Sorting`  |  Easy  |    |
 |  0985  |  [Sum of Even Numbers After Queries](./_0900_0999/_0985_SumOfEvenNumbersAfterQueries/README.md)  |  `Array`,`Simulation`  |  Medium  |    |
 |  0987  |  [Vertical Order Traversal of a Binary Tree](./_0900_0999/_0987_VerticalOrderTraversalOfABinaryTree/README.md)  |  `Hash Table`,`Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Hard  |    |
 |  0990  |  [Satisfiability of Equality Equations](./_0900_0999/_0990_SatisfiabilityOfEqualityEquations/README.md)  |  `Array`,`String`,`Union Find`,`Graph`  |  Medium  |    |

@@ -188,7 +188,7 @@ if __name__ == '__main__':
     # cookie = configParser.get("Cookies", "cookie")
     cookie = '1'
 
-    question_title = 'Largest Perimeter Triangle'
+    question_title = 'Check if the Sentence Is Pangram'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

@@ -48,6 +48,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  1578  |  [Minimum Time to Make Rope Colorful](./_1500_1599/_1578_MinimumTimeToMakeRopeColorful/README.md)  |  `Array`,`String`,`Dynamic Programming`,`Greedy`  |  Medium  |    |
 |  1680  |  [Concatenation of Consecutive Binary Numbers](./_1600_1699/_1680_ConcatenationOfConsecutiveBinaryNumbers/README.md)  |  `Math`,`Bit Manipulation`,`Simulation`  |  Medium  |    |
 |  1770  |  [Maximum Score from Performing Multiplication Operations](./_1700_1799/_1770_MaximumScoreFromPerformingMultiplicationOperations/README.md)  |  `Array`,`Dynamic Programming`  |  Medium  |    |
+|  1832  |  [Check if the Sentence Is Pangram](./_1800_1899/_1832_CheckIfTheSentenceIsPangram/README.md)  |  `Hash Table`,`String`  |  Easy  |    |
 |  1996  |  [The Number of Weak Characters in the Game](./_1900_1999/_1996_TheNumberOfWeakCharactersInTheGame/README.md)  |  `Array`,`Stack`,`Greedy`,`Sorting`,`Monotonic Stack`  |  Medium  |    |
 |  2007  |  [Find Original Array From Doubled Array](./_2000_2099/_2007_FindOriginalArrayFromDoubledArray/README.md)  |  `Array`,`Hash Table`,`Greedy`,`Sorting`  |  Medium  |    |
 |  2389  |  [Longest Subsequence With Limited Sum](./_2300_2399/_2389_LongestSubsequenceWithLimitedSum/README.md)  |  `Array`,`Binary Search`,`Greedy`,`Sorting`,`Prefix Sum`  |  Easy  |    |

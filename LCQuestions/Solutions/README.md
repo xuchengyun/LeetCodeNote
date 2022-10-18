@@ -73,6 +73,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  2433  |  [Find The Original Array of Prefix Xor](./_2400_2499/_2433_FindTheOriginalArrayOfPrefixXor/README.md)  |  `Array`,`Bit Manipulation`  |  Medium  |    |
 |  2434  |  [Using a Robot to Print the Lexicographically Smallest String](./_2400_2499/_2434_UsingARobotToPrintTheLexicographicallySmallestString/README.md)  |  `Hash Table`,`String`,`Stack`,`Greedy`  |  Medium  |    |
 |  2435  |  [Paths in Matrix Whose Sum Is Divisible by K](./_2400_2499/_2435_PathsInMatrixWhoseSumIsDivisibleByK/README.md)  |  `Array`,`Dynamic Programming`,`Matrix`  |  Hard  |    |
+|  2442  |  [Count Number of Distinct Integers After Reverse Operations](./_2400_2499/_2442_CountNumberOfDistinctIntegersAfterReverseOperations/README.md)  |  `Array`,`Hash Table`,`Math`  |  Medium  |    |
 |  2443  |  [Sum of Number and Its Reverse](./_2400_2499/_2443_SumOfNumberAndItsReverse/README.md)  |  `Math`,`Enumeration`  |  Medium  |    |
 |  2444  |  [Count Subarrays With Fixed Bounds](./_2400_2499/_2444_CountSubarraysWithFixedBounds/README.md)  |    |  Hard  |    |
 

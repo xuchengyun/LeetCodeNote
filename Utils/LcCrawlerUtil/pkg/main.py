@@ -188,7 +188,7 @@ if __name__ == '__main__':
     # cookie = configParser.get("Cookies", "cookie")
     cookie = '1'
 
-    question_title = 'Sum of Number and Its Reverse'
+    question_title = 'Count Number of Distinct Integers After Reverse Operations'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

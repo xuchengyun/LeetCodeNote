@@ -188,7 +188,7 @@ if __name__ == '__main__':
     # cookie = configParser.get("Cookies", "cookie")
     cookie = '1'
 
-    question_title = 'Check if the Sentence Is Pangram'
+    question_title = 'Sum of Number and Its Reverse'
     crawler = Crawler(cookie)
     res = crawler.run(question_title)
     save(res)

@@ -14,6 +14,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0019  |  [Remove Nth Node From End of List](./_0000_0099/_0019_RemoveNthNodeFromEndOfList/README.md)  |  `Linked List`,`Two Pointers`  |  Medium  |    |
 |  0033  |  [Search in Rotated Sorted Array](../../../LCQuestions/solutions/_0000_0099/_0033_SearchInRotatedSortedArray/README.md)  |  `Array`,`Binary Search`  |  Medium  |    |
 |  0035  |  [Search Insert Position](./_0000_0099/_0035_SearchInsertPosition/README.md)  |  `Array`,`Binary Search`  |  Easy  |    |
+|  0038  |  [Count and Say](./_0000_0099/_0038_CountAndSay/README.md)  |  `String`  |  Medium  |    |
 |  0042  |  [Trapping Rain Water](./_0000_0099/_0042_TrappingRainWater/README.md)  |  `Array`,`Two Pointers`,`Dynamic Programming`,`Stack`,`Monotonic Stack`  |  Hard  |    |
 |  0048  |  [Rotate Image](./_0000_0099/_0048_RotateImage/README.md)  |  `Array`,`Math`,`Matrix`  |  Medium  |    |
 |  0094  |  [Binary Tree Inorder Traversal](./_0000_0099/_0094_BinaryTreeInorderTraversal/README.md)  |  `Stack`,`Tree`,`Depth-First Search`,`Binary Tree`  |  Easy  |    |
@@ -72,6 +73,8 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  2433  |  [Find The Original Array of Prefix Xor](./_2400_2499/_2433_FindTheOriginalArrayOfPrefixXor/README.md)  |  `Array`,`Bit Manipulation`  |  Medium  |    |
 |  2434  |  [Using a Robot to Print the Lexicographically Smallest String](./_2400_2499/_2434_UsingARobotToPrintTheLexicographicallySmallestString/README.md)  |  `Hash Table`,`String`,`Stack`,`Greedy`  |  Medium  |    |
 |  2435  |  [Paths in Matrix Whose Sum Is Divisible by K](./_2400_2499/_2435_PathsInMatrixWhoseSumIsDivisibleByK/README.md)  |  `Array`,`Dynamic Programming`,`Matrix`  |  Hard  |    |
+|  2443  |  [Sum of Number and Its Reverse](./_2400_2499/_2443_SumOfNumberAndItsReverse/README.md)  |  `Math`,`Enumeration`  |  Medium  |    |
+|  2444  |  [Count Subarrays With Fixed Bounds](./_2400_2499/_2444_CountSubarraysWithFixedBounds/README.md)  |    |  Hard  |    |
 
 ## Copyright
 

@@ -34,6 +34,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0622  |  [Design Circular Queue](./_0600_0699/_0622_DesignCircularQueue/README.md)  |  `Array`,`Linked List`,`Design`,`Queue`  |  Medium  |    |
 |  0637  |  [Average of Levels in Binary Tree](./_0600_0699/_0637_AverageOfLevelsInBinaryTree/README.md)  |  `Tree`,`Depth-First Search`,`Breadth-First Search`,`Binary Tree`  |  Easy  |    |
 |  0658  |  [Find K Closest Elements](./_0600_0699/_0658_FindKClosestElements/README.md)  |  `Array`,`Two Pointers`,`Binary Search`,`Sorting`,`Heap (Priority Queue)`  |  Medium  |    |
+|  0692  |  [Top K Frequent Words](./_0600_0699/_0692_TopKFrequentWords/README.md)  |  `Hash Table`,`String`,`Trie`,`Sorting`,`Heap (Priority Queue)`,`Bucket Sort`,`Counting`  |  Medium  |    |
 |  0718  |  [Maximum Length of Repeated Subarray](./_0700_0799/_0718_MaximumLengthOfRepeatedSubarray/README.md)  |  `Array`,`Binary Search`,`Dynamic Programming`,`Sliding Window`,`Rolling Hash`,`Hash Function`  |  Medium  |    |
 |  0814  |  [Binary Tree Pruning](./_0800_0899/_0814_BinaryTreePruning/README.md)  |  `Tree`,`Depth-First Search`,`Binary Tree`  |  Medium  |    |
 |  0838  |  [Push Dominoes](./_0800_0899/_0838_PushDominoes/README.md)  |  `Two Pointers`,`String`,`Dynamic Programming`  |  Medium  |    |

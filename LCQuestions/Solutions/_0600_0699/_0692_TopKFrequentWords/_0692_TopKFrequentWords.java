@@ -1,8 +1,8 @@
-package LCQuestions;
+package LCQuestions.Solutions._0600_0699._0692_TopKFrequentWords;
 
 import java.util.*;
 
-public class _692_TopKFrequentWords {
+public class _0692_TopKFrequentWords {
     public List<String> topKFrequent(String[] words, int k) {
         Map<String, Integer> count = new HashMap<>();
         for (String word : words) {

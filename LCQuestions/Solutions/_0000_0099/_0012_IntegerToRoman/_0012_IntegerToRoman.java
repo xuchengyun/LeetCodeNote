@@ -1,6 +1,6 @@
-package LCQuestions;
+package LCQuestions.Solutions._0000_0099._0012_IntegerToRoman;
 
-public class _012_IntegerToRoman {
+public class _0012_IntegerToRoman {
     public String intToRoman(int num) {
         StringBuilder str = new StringBuilder();
         String symbol[] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
